@@ -4,9 +4,20 @@ import java.util.ArrayList;
 
 public class PackageEntity  extends NodeEntity{
 
-    public ArrayList<TypeEntity> classes = new ArrayList<>();
+    protected ArrayList<InterfaceEntity> interfaces = new ArrayList<>();
+    protected ArrayList<ClassEntity> classes = new ArrayList<>();
 
     public PackageEntity(String n) {
         super(n);
     }
+
+    public void addInterface(InterfaceEntity i){
+        interfaces.add(i);
+    }
+
+    public void addClass(ClassEntity c){
+        classes.add(c);
+    }
+
+
 }

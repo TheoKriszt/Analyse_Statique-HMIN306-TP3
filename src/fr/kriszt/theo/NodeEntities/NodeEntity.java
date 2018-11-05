@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class NodeEntity {
 
+    public String getName() {
+        return name;
+    }
+
     public String name;
 
     public NodeEntity(String n){

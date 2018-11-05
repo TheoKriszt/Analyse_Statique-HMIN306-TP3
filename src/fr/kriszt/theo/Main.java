@@ -1,11 +1,14 @@
 package fr.kriszt.theo;
 
+import fr.kriszt.theo.NodeEntities.ApplicationEntity;
 import fr.kriszt.theo.visitors.SourceCodeVisitor;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
 import java.io.*;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -16,23 +19,22 @@ public class Main {
     private static CompilationUnit cu;
     private static SourceCodeVisitor visitor;
 
-    public static void parse(String str) {
+    public static void parse(String str, ApplicationEntity application) {
 //        ASTParser parser = ASTParser.newParser(AST.JLS4);
         parser.setSource(str.toCharArray());
         parser.setKind(ASTParser.K_COMPILATION_UNIT);
 
         cu = (CompilationUnit) parser.createAST(null);
-        visitor = new SourceCodeVisitor(cu, str);
+        visitor = new SourceCodeVisitor(cu, str, application);
+
 //        System.err.println(linesNumber + " lines found");
 
+//        visitor.setApplication(application);
         cu.accept(visitor);
 
-        System.err.println(visitor);
+//        System.err.println(visitor);
 
     }
-
-
-
 
     //read file content into a string
     public static String readFileToString(String filePath) throws IOException {
@@ -56,9 +58,10 @@ public class Main {
     /**
      * Recursively explore and parse files with PARSEABLE_EXTENSION extension
      * @param path
+     * @param application
      * @throws IOException
      */
-    public static void readDirectory(String path) throws IOException{
+    public static void readDirectory(String path, ApplicationEntity application) throws IOException{
 
         File dirs = new File(path);
 
@@ -74,10 +77,10 @@ public class Main {
 
             for (File f : files ) {
                 if (f.isDirectory()){
-                    readDirectory(f.getCanonicalPath());
+                    readDirectory(f.getCanonicalPath(), application);
                 } else if(f.isFile() && f.getName().endsWith(PARSEABLE_EXTENSION)){
 //                    System.err.println("parsing file " + f.getName());
-                    parse(readFileToString(f.getAbsolutePath()));
+                    parse(readFileToString(f.getAbsolutePath()), application);
                     return;
                 }
             }
@@ -90,8 +93,13 @@ public class Main {
             path = args[0];
         }
 
+        ApplicationEntity application = new ApplicationEntity("Application");
+        readDirectory(path, application);
 
 
-        readDirectory(path);
+
+        application.printResume( 5 );
+
+
     }
 }
