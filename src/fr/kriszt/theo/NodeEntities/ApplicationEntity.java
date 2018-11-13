@@ -97,7 +97,7 @@ public class ApplicationEntity extends NodeEntity {
 
 
         avg /= (float) countClasses();
-        System.err.println("avg methods : " + avg);
+//        System.err.println("avg methods : " + avg);
         return avg;
     }
 
@@ -107,13 +107,13 @@ public class ApplicationEntity extends NodeEntity {
         for (ClassEntity c : getClasses()){
             avg += c.attributes.size();
         }
-        System.out.println("sum attr : " + avg);
+//        System.out.println("sum attr : " + avg);
         avg /= (float) countClasses();
         return avg;
     }
 
     private List<ClassEntity> getClassTopTier(List<ClassEntity> classes){
-        List<ClassEntity> top = new ArrayList<>();
+        ArrayList<ClassEntity> top = new ArrayList<>();
         if (!classes.isEmpty()) {
             if (classes.size() <= 10){
                 top.add( classes.get(0) );
@@ -126,7 +126,7 @@ public class ApplicationEntity extends NodeEntity {
     }
 
     private List<MethodEntity> getMethodTopTier(List<MethodEntity> classes){
-        List<MethodEntity> top = new ArrayList<>();
+        ArrayList<MethodEntity> top = new ArrayList<>();
         if (!classes.isEmpty()) {
             if (classes.size() <= 10){
                 top.add( classes.get(0) );
@@ -140,7 +140,7 @@ public class ApplicationEntity extends NodeEntity {
 
     private List<ClassEntity> top10Attributes(){
         List<ClassEntity> classes = getClasses();
-        classes.sort((Comparator<TypeEntity>) (o1, o2) -> o1.attributes.size() > o2.attributes.size() ? 1 : -1);
+        classes.sort((Comparator<TypeEntity>) (o1, o2) -> o1.attributes.size() > o2.attributes.size() ? -1 : 1);
 
         return getClassTopTier(classes);
 
@@ -149,14 +149,26 @@ public class ApplicationEntity extends NodeEntity {
 
     private List<ClassEntity> top10Methods(){
         List<ClassEntity> classes = getClasses();
-        classes.sort((Comparator<TypeEntity>) (o1, o2) -> o1.methods.size() > o2.methods.size() ? 1 : -1);
+        classes.sort((Comparator<TypeEntity>) (o1, o2) -> o1.methods.size() > o2.methods.size() ? -1 : 1);
         return getClassTopTier(classes);
 
     }
 
     private List<MethodEntity> top10LinesCount(){
         List<MethodEntity> methods = getMethods();
-        methods.sort((o1, o2) -> o1.countLines > o2.countLines ? 1 : -1);
+//        methods.sort((o1, o2) -> o1.countLines > o2.countLines ? -1 : 1);
+        methods.sort((o1, o2) -> {
+            System.err.println("Comparaison de " + o1 + " et " + o2);
+//            if (o1 == (o2)) return 0;
+            if (o1.equals(o2)) return 0;
+            return o1.countLines > o2.countLines ? -1 : 1;
+
+        });
+
+//        for( MethodEntity m : methods ){
+//            System.err.println(m + " : " + m.countLines);
+//        }
+
         return getMethodTopTier(methods);
 
     }

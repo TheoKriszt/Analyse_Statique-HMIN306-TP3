@@ -3,7 +3,6 @@ package fr.kriszt.theo.NodeEntities;
 import org.eclipse.jdt.core.dom.Type;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public abstract class TypeEntity extends NodeEntity {
 
@@ -24,10 +23,14 @@ public abstract class TypeEntity extends NodeEntity {
     }
 
     public void setSuperType(Type superclassType) {
-        superType = superclassType.getNodeType() + "";
+        if (superclassType != null){
+            superType = superclassType.getNodeType() + "";
+        }
+
     }
 
     public void addAttribute(String attr){
         attributes.add(attr);
     }
+
 }

@@ -8,13 +8,18 @@ public class NodeEntity {
         return name;
     }
 
-    public String name;
+    protected String name;
 
     public NodeEntity(String n){
         name = n;
     }
 
     public static ArrayList<PackageEntity> packages = new ArrayList<>();
+
+    @Override
+    public String toString(){
+        return name;
+    }
 
 
 }

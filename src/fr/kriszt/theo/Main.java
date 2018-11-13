@@ -81,7 +81,7 @@ public class Main {
                 } else if(f.isFile() && f.getName().endsWith(PARSEABLE_EXTENSION)){
 //                    System.err.println("parsing file " + f.getName());
                     parse(readFileToString(f.getAbsolutePath()), application);
-                    return;
+//                    return;
                 }
             }
 

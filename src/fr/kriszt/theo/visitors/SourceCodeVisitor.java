@@ -122,6 +122,7 @@ public class SourceCodeVisitor extends ASTVisitor{
 
         text+=" : " +node.getName()+ "\n" + "Nom de la super classe: ";
 //        Type Superclass = node.getSuperclassType();
+//        System.out.println("Setting superType of " + node.getName() + " to " +  node.getSuperclassType());
         currentType.setSuperType( node.getSuperclassType() );
         text += node.getSuperclassType();
         text+="\n";
@@ -142,13 +143,20 @@ public class SourceCodeVisitor extends ASTVisitor{
                     "\t Type de retour : " +m.getReturnType2() +
                     "\n" +"\t Liste des paramètres"+m.parameters()+"\n \n";
 
-            MethodEntity methodEntity = new MethodEntity(m.getName().toString());
+            MethodEntity methodEntity = new MethodEntity(m.getName().toString(), m);
             methodEntity.addParams(m.parameters());
 
             String returnType = m.getReturnType2() == null ? "void" : m.getReturnType2().toString();
             methodEntity.setReturnType(returnType);
 
-            String methodBody = m.getBody().toString();
+//            System.out.println("Nom de la methode : " + m.getName());
+//            System.out.println("TEST TS : " + m.toString());
+
+            String methodBody = "";
+            if (m.getBody() != null){
+                methodBody = m.getBody().toString();
+            }
+
             methodEntity.setLinesCount( countLines(methodBody, false ) );
 
             currentType.addMethod( methodEntity );

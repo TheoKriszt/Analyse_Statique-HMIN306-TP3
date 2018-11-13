@@ -20,7 +20,7 @@ public class And extends Prop {
 
 
 
-	@Override
+//	@Override
 	void affichage() {
 		System.out.print("(");
 		p1.affichage();
@@ -38,7 +38,7 @@ public class And extends Prop {
 	
 	 
 
-	@Override
+//	@Override
 	public Prop clausifier() {
 		
 		if (p1 instanceof Top) {
