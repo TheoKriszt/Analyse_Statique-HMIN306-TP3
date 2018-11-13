@@ -10,6 +10,7 @@ public class MethodEntity  extends NodeEntity{
 
     public ArrayList<String> params = new ArrayList<>();
     private MethodDeclaration methodDeclaration = null;
+    private TypeEntity typeEntity = null;
     public int countLines = 0;
 
     public HashSet<MethodEntity> calledMethods = new HashSet<>();
@@ -17,13 +18,19 @@ public class MethodEntity  extends NodeEntity{
 
     public MethodEntity(String n) {
         super(n);
+
     }
 
-    public MethodEntity(String toString, MethodDeclaration m) {
-        this(toString);
-        methodDeclaration = m;
+    public MethodEntity(String toString, TypeEntity currentType) {
+        super(toString);
+        this.typeEntity = currentType;
+//        System.out.println("Methode " + this);
 
+    }
 
+    public MethodEntity(String toString, MethodDeclaration m, TypeEntity currentType) {
+        this(toString, currentType);
+        this.methodDeclaration = m;
     }
 
     public void setReturnType(String returnType2) {
@@ -45,8 +52,7 @@ public class MethodEntity  extends NodeEntity{
     }
 
     @Override
-    public boolean equals(Object o){
-        System.out.println("Compare " + this + " to " + );
-        return o instanceof MethodEntity && ((MethodEntity) o).methodDeclaration.equals(methodDeclaration.);
+    public String toString(){
+        return typeEntity + "." +  super.toString();
     }
 }

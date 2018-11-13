@@ -75,7 +75,7 @@ public class SourceCodeVisitor extends ASTVisitor{
 
     @Override
     public boolean visit(PackageDeclaration node) {
-        System.err.println("Package trouvé : " + node.getName());
+//        System.err.println("Package trouvé : " + node.getName());
         declaredPackages.add(node.getName());
 
         currentPackage = new PackageEntity(node.getName().toString());
@@ -143,7 +143,7 @@ public class SourceCodeVisitor extends ASTVisitor{
                     "\t Type de retour : " +m.getReturnType2() +
                     "\n" +"\t Liste des paramètres"+m.parameters()+"\n \n";
 
-            MethodEntity methodEntity = new MethodEntity(m.getName().toString(), m);
+            MethodEntity methodEntity = new MethodEntity(m.getName().toString(), m, currentType);
             methodEntity.addParams(m.parameters());
 
             String returnType = m.getReturnType2() == null ? "void" : m.getReturnType2().toString();
@@ -165,6 +165,59 @@ public class SourceCodeVisitor extends ASTVisitor{
         }
 
 //        System.out.println(text);
+        return true;
+    }
+
+    public boolean visit(MethodInvocation methodInvocation) {
+
+        try
+        {
+            ASTNode parent = methodInvocation.getParent();
+
+            if(parent == null)
+                return true;
+
+            while(parent.getNodeType() != 31)
+                parent = parent.getParent();
+
+            MethodDeclaration methodDeclaration = (MethodDeclaration) parent;
+
+//            System.out.println("Methode parente : " + currentType.getName() + "." + methodDeclaration.getName());
+
+            parent = methodInvocation.getParent();
+
+            if(parent == null)
+                return true;
+
+            while(parent.getNodeType() != 55)
+                parent = parent.getParent();
+
+            TypeDeclaration typeDeclaration = (TypeDeclaration) parent;
+
+//            if(treeStructures.get(typeDeclaration.getName().toString()).declarationInvocations.get(methodDeclaration.getName().toString()) == null)
+//                treeStructures.get(typeDeclaration.getName().toString()).declarationInvocations.put(methodDeclaration.getName().toString(), new TreeSet<String>());
+
+
+//            System.out.println("Invocation depuis : " + currentType.getName() + "." + methodDeclaration.getName() + " ->  " + methodInvocation.getExpression() + "." +  methodInvocation.getName());
+//            System.out.println("Signature totale : " + methodInvocation);
+//            System.out.println("Appellant : " + methodInvocation.getExpression().resolveTypeBinding().getName() );
+//            System.out.println("Classe Appelante : " + currentType.getName());
+
+            String miName = currentType.getName() + "." + methodDeclaration.getName() + " ->  " + methodInvocation.getExpression() + "." +  methodInvocation.getName();
+//            System.out.println(miName);
+
+
+            MethodInvocationEntity mie = new MethodInvocationEntity(miName, currentType, methodDeclaration, methodInvocation); // <Full name>, Predicat . affichage , System.out
+
+//            treeStructures.get(typeDeclaration.getName().toString()).declarationInvocations.get(methodDeclaration.getName().toString()).add(methodInvocation.getName().toString());
+//
+//            methodMethods.get(methodDeclaration.getName().toString()).add(methodInvocation.getName().toString());
+        }
+        catch(NullPointerException nullPointerException)
+        {
+
+        }
+
         return true;
     }
 

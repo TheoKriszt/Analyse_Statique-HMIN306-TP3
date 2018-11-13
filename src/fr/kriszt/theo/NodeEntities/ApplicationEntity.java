@@ -155,21 +155,34 @@ public class ApplicationEntity extends NodeEntity {
     }
 
     private List<MethodEntity> top10LinesCount(){
-        List<MethodEntity> methods = getMethods();
-//        methods.sort((o1, o2) -> o1.countLines > o2.countLines ? -1 : 1);
-        methods.sort((o1, o2) -> {
-            System.err.println("Comparaison de " + o1 + " et " + o2);
-//            if (o1 == (o2)) return 0;
-            if (o1.equals(o2)) return 0;
-            return o1.countLines > o2.countLines ? -1 : 1;
 
-        });
+        List<ClassEntity> classes = getClasses();
+        List<MethodEntity> methods = new ArrayList<>();
+
+        for ( ClassEntity ce : classes ){
+            List<MethodEntity> subMethods = ce.methods;
+            subMethods.sort((o1, o2) -> o1.countLines > o2.countLines ? -1 : 1);
+            methods.addAll(getMethodTopTier(subMethods));
+        }
+
+
+//        List<MethodEntity> methods = getMethods();
+////        methods.sort((o1, o2) -> o1.countLines > o2.countLines ? -1 : 1);
+//        System.err.println("tri d'une liste de taille " + methods.size());
+//        methods.sort((o1, o2) -> {
+////            System.err.println("Comparaison de " + o1 + " et " + o2);
+//
+////            if (o1 == (o2)) return 0;
+//            if (o1.equals(o2)) return 0;
+//            return o1.countLines > o2.countLines ? -1 : 1;
+//
+//        });
 
 //        for( MethodEntity m : methods ){
 //            System.err.println(m + " : " + m.countLines);
 //        }
 
-        return getMethodTopTier(methods);
+        return methods;
 
     }
 

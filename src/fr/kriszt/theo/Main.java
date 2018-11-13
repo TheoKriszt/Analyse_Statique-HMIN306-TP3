@@ -1,18 +1,18 @@
 package fr.kriszt.theo;
 
 import fr.kriszt.theo.NodeEntities.ApplicationEntity;
+import fr.kriszt.theo.NodeEntities.MethodInvocationEntity;
 import fr.kriszt.theo.visitors.SourceCodeVisitor;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
 import java.io.*;
-import java.util.List;
-import java.util.Scanner;
 
 public class Main {
 
-    public static final String DEFAULT_SOURCE_PATH = "/auto_home/tkriszt/workspace/Resolution/";
+    public static final String DEFAULT_SOURCE_PATH = "/auto_home/tkriszt/IdeaProjects/Evolution_restructuration/AnalyseStatique/lib/sourceProject/";
+//    public static final String DEFAULT_SOURCE_PATH = "/auto_home/tkriszt/workspace/Resolution/";
 //    public static final String DEFAULT_SOURCE_PATH = "lib/sourceProjet/";
     public static final String PARSEABLE_EXTENSION = "java";
     private static final ASTParser parser = ASTParser.newParser(AST.JLS4);
@@ -99,6 +99,8 @@ public class Main {
 
 
         application.printResume( 5 );
+
+        MethodInvocationEntity.bind();
 
 
     }
