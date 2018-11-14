@@ -112,7 +112,7 @@ public class SourceCodeVisitor extends ASTVisitor{
         }
         else {
             text +="Nom de la classe";
-            ClassEntity classEntity = new ClassEntity(node.getName().toString());
+            ClassEntity classEntity = new ClassEntity(node.getName().toString(), currentPackage, node);
             currentPackage.addClass( classEntity );
             currentType = classEntity;
 
@@ -146,11 +146,20 @@ public class SourceCodeVisitor extends ASTVisitor{
             MethodEntity methodEntity = new MethodEntity(m.getName().toString(), m, currentType);
             methodEntity.addParams(m.parameters());
 
-            String returnType = m.getReturnType2() == null ? "void" : m.getReturnType2().toString();
+            currentType.addMethod(methodEntity);
+
+
+
+            String returnType;
+            if (m.isConstructor()){
+                returnType = m.getName().toString();
+            }else if ( m.getReturnType2() != null){
+                returnType = m.getReturnType2().toString();
+            } else returnType = "void";
+
+//            System.out.println("\t returns " + returnType);
             methodEntity.setReturnType(returnType);
 
-//            System.out.println("Nom de la methode : " + m.getName());
-//            System.out.println("TEST TS : " + m.toString());
 
             String methodBody = "";
             if (m.getBody() != null){

@@ -48,7 +48,7 @@ public class ApplicationEntity extends NodeEntity {
     private ArrayList<ClassEntity> getClassesWithMinMethods(int minMethods) {
         ArrayList<ClassEntity> classes = new ArrayList<>();
         for (ClassEntity c : getClasses()){
-            if (c.methods.size() >= minMethods){
+            if (c.getMethods().size() >= minMethods){
                 classes.add(c);
             }
         }
@@ -71,7 +71,7 @@ public class ApplicationEntity extends NodeEntity {
         nonBlankLines += countLines;
     }
 
-    private List<ClassEntity> getClasses(){
+    public List<ClassEntity> getClasses(){
         List<ClassEntity> classes = new ArrayList<>();
 
         for (PackageEntity myPackage : packages){
@@ -83,7 +83,7 @@ public class ApplicationEntity extends NodeEntity {
     private List<MethodEntity> getMethods(){
         List<MethodEntity> methods = new ArrayList<>();
         for (ClassEntity c : getClasses()){
-            methods.addAll(c.methods);
+            methods.addAll(c.getMethods());
         }
         return methods;
     }
@@ -92,7 +92,7 @@ public class ApplicationEntity extends NodeEntity {
         float avg = 0;
 
         for (ClassEntity c : getClasses()){
-            avg += c.methods.size();
+            avg += c.getMethods().size();
         }
 
 
@@ -160,7 +160,7 @@ public class ApplicationEntity extends NodeEntity {
         List<MethodEntity> methods = new ArrayList<>();
 
         for ( ClassEntity ce : classes ){
-            List<MethodEntity> subMethods = ce.methods;
+            List<MethodEntity> subMethods = ce.getMethods();
             subMethods.sort((o1, o2) -> o1.countLines > o2.countLines ? -1 : 1);
             methods.addAll(getMethodTopTier(subMethods));
         }

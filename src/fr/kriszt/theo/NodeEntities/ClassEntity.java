@@ -1,15 +1,35 @@
 package fr.kriszt.theo.NodeEntities;
 
-import org.eclipse.jdt.core.dom.PackageDeclaration;
+import org.eclipse.jdt.core.dom.TypeDeclaration;
+
+import java.util.ArrayList;
 
 public class ClassEntity extends TypeEntity {
-    public ClassEntity(String n) {
+
+    private TypeDeclaration typeDeclaration;
+
+    private PackageEntity packageDeclaration = null;
+
+    @Override
+    public ArrayList<MethodEntity> getMethods() {
+        return methods;
+    }
+
+    private ArrayList<MethodEntity> methods = new ArrayList<>();
+
+    public ClassEntity(String n, PackageEntity currentPackage, TypeDeclaration node) {
         super(n);
+        packageDeclaration = currentPackage;
+        typeDeclaration = node;
 //        System.out.println("Classe " + n);
     }
 
-    public ClassEntity(String n, PackageDeclaration p){
-        this(n);
+    public boolean matchDeclaration(TypeDeclaration declaration){
+        return declaration.equals(typeDeclaration);
+    }
+
+    public void addMethod(MethodEntity me){
+        methods.add(me);
     }
 
     public boolean equals(Object o){

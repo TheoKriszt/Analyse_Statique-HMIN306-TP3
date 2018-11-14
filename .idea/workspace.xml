@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cdf5c7c-0603-4808-80dd-edcf6916b365" name="Default Changelist" comment="wéééééééé... (pls kill me)">
-      <change afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" afterDir="false" />
+    <list default="true" id="4cdf5c7c-0603-4808-80dd-edcf6916b365" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject/DPLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject/DPLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Implique.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject/Implique.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ApplicationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ApplicationEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ClassEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ClassEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/InterfaceEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/InterfaceEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/MethodEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/MethodEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/NodeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/NodeEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/PackageEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/PackageEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ParamEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ParamEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/TypeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/TypeEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/visitors/SourceCodeVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/visitors/SourceCodeVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/DPLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/DPLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,24 +68,36 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-2083036492">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2090" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2090" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#SourceCodeVisitor#0;class#SourceCodeVisitor#0" />
-                <element signature="method#visit#0;class#SourceCodeVisitor#0" />
-                <element signature="method#visit#1;class#SourceCodeVisitor#0" />
-                <element signature="method#visit#2;class#SourceCodeVisitor#0" />
-                <element signature="method#toString#0;class#SourceCodeVisitor#0" />
-                <element signature="e#7850#7851#0" expanded="true" />
-                <element signature="e#7874#7875#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="389">
+              <caret line="218" column="45" selection-start-line="218" selection-start-column="45" selection-end-line="218" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -90,11 +105,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+            <state relative-caret-position="370">
+              <caret line="103" column="33" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -102,35 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/sourceProject/Predicat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+            <state relative-caret-position="387">
+              <caret line="65" column="63" lean-forward="true" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -138,36 +161,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2514">
-              <caret line="200" column="5" lean-forward="true" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
+            <state relative-caret-position="144">
+              <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
               <folding>
+                <element signature="method#printResume#0;class#ApplicationEntity#0" />
+                <element signature="method#getMaxParams#0;class#ApplicationEntity#0" />
                 <element signature="method#getClasses#0;class#ApplicationEntity#0" />
-                <element signature="method#getMethods#0;class#ApplicationEntity#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding>
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,9 +184,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>afficha</find>
-      <find>PackageVisi</find>
-      <find>classe</find>
       <find>class</find>
       <find>packageD</find>
       <find>Nom de la class</find>
@@ -215,6 +211,9 @@
       <find>aff</find>
       <find>Invocation depui</find>
       <find>Signature tot</find>
+      <find>toSt</find>
+      <find>setRet</find>
+      <find>toStr</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/../lib</dir>
@@ -229,6 +228,7 @@
         <option value="$PROJECT_DIR$/src/micka/step1/Parser.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeParser.java" />
         <option value="$PROJECT_DIR$/lib/sourceProject/count/Count.java" />
+        <option value="$PROJECT_DIR$/lib/sourceProject/And.java" />
         <option value="$PROJECT_DIR$/lib/sourceProject/Not.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/ClassVisitor.java" />
@@ -238,27 +238,31 @@
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/TypeSpecifier.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/InterfaceEntity.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/PackageEntity.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ParamEntity.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" />
-        <option value="$PROJECT_DIR$/lib/sourceProject/And.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" />
-        <option value="$PROJECT_DIR$/lib/sourceProject/DPLL.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/ParserUtils.java" />
         <option value="$PROJECT_DIR$/lib/sourceProject/Implique.java" />
-        <option value="$PROJECT_DIR$/lib/sourceProject/Generator.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1280" />
-    <option name="y" value="25" />
-    <option name="width" value="1280" />
-    <option name="height" value="1415" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-133" />
+    <option name="y" value="563" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -266,65 +270,58 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="sourceProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="theo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="theo" type="462c0819:PsiDirectoryNode" />
               <item name="NodeEntities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="theo" type="462c0819:PsiDirectoryNode" />
-              <item name="visitors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542111556735" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542153766242" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../lib" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -337,6 +334,141 @@
       <recent name="$PROJECT_DIR$/lib/ast" />
       <recent name="$PROJECT_DIR$/res" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/sourceProject/And.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/sourceProject/DPLL.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/sourceProject/Generator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/And.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/DPLL.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Generator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/Main.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/vcs.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ApplicationEntity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ClassEntity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/InterfaceEntity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/MethodEntity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/NodeEntity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/PackageEntity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ParamEntity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/TypeEntity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/visitors/SourceCodeVisitor.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -354,15 +486,8 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="fr.kriszt.theo.Main" />
       <module name="AnalyseStatique" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -373,28 +498,49 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cdf5c7c-0603-4808-80dd-edcf6916b365" name="Default Changelist" comment="" />
+      <created>1539627502462</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539627502462</updated>
+      <workItem from="1539627561870" duration="5533000" />
+      <workItem from="1541442131915" duration="55000" />
+      <workItem from="1541442683877" duration="2123000" />
+      <workItem from="1541613967333" duration="191000" />
+      <workItem from="1542118977361" duration="8105000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8078000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="2562" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-133" y="563" width="960" height="1040" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1921241" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.54555553" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32843894" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993576" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3337104" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988889" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32921174" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32976446" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32843894" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32777777" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2497332" />
@@ -403,6 +549,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Palette" order="8" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -476,19 +623,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ParamEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/PackageEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -496,28 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/And.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -531,24 +652,8 @@
     <entry file="file://$PROJECT_DIR$/lib/sourceProject/Clause.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$USER_HOME$/lib/jdk-11/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
-          <folding>
-            <element signature="e#5877#5878#0" expanded="true" />
-            <element signature="e#5913#5914#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/lib/jdk-11/lib/src.zip!/java.base/java/util/TimSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="517" column="29" lean-forward="true" selection-start-line="517" selection-start-column="29" selection-end-line="517" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/lib/jdk-11/lib/src.zip!/java.base/java/lang/Object.java" />
+    <entry file="jar://$USER_HOME$/lib/jdk-11/lib/src.zip!/java.base/java/util/TimSort.java" />
     <entry file="file://$PROJECT_DIR$/lib/sourceProject/Top.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -577,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Implique.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/sourceProject/Predicat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -593,8 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        <state relative-caret-position="408">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -605,81 +703,94 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/ParserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
           <folding>
-            <element signature="e#4766#4767#0" expanded="true" />
-            <element signature="e#4812#4813#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java">
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Implique.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java">
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/And.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
+        <state relative-caret-position="17">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#SourceCodeVisitor#0;class#SourceCodeVisitor#0" />
-            <element signature="method#visit#0;class#SourceCodeVisitor#0" />
-            <element signature="method#visit#1;class#SourceCodeVisitor#0" />
-            <element signature="method#visit#2;class#SourceCodeVisitor#0" />
-            <element signature="method#toString#0;class#SourceCodeVisitor#0" />
-            <element signature="e#7850#7851#0" expanded="true" />
-            <element signature="e#7874#7875#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2514">
-          <caret line="200" column="5" lean-forward="true" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
+        <state relative-caret-position="144">
+          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
           <folding>
+            <element signature="method#printResume#0;class#ApplicationEntity#0" />
+            <element signature="method#getMaxParams#0;class#ApplicationEntity#0" />
             <element signature="method#getClasses#0;class#ApplicationEntity#0" />
-            <element signature="method#getMethods#0;class#ApplicationEntity#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="370">
+          <caret line="103" column="33" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="65" column="63" lean-forward="true" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="218" column="45" selection-start-line="218" selection-start-column="45" selection-end-line="218" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -713,7 +824,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>hadoop</last-edited>
+          <last-edited>java</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -725,7 +836,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -751,6 +862,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>commons-io-2.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

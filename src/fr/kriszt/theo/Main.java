@@ -11,7 +11,8 @@ import java.io.*;
 
 public class Main {
 
-    public static final String DEFAULT_SOURCE_PATH = "/auto_home/tkriszt/IdeaProjects/Evolution_restructuration/AnalyseStatique/lib/sourceProject/";
+    public static final String DEFAULT_SOURCE_PATH = "lib/sourceProject";
+//    public static final String DEFAULT_SOURCE_PATH = "/auto_home/tkriszt/IdeaProjects/Evolution_restructuration/AnalyseStatique/lib/sourceProject/";
 //    public static final String DEFAULT_SOURCE_PATH = "/auto_home/tkriszt/workspace/Resolution/";
 //    public static final String DEFAULT_SOURCE_PATH = "lib/sourceProjet/";
     public static final String PARSEABLE_EXTENSION = "java";
@@ -100,7 +101,7 @@ public class Main {
 
         application.printResume( 5 );
 
-        MethodInvocationEntity.bind();
+        MethodInvocationEntity.bind(application);
 
 
     }
