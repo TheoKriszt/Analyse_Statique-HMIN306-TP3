@@ -65,12 +65,38 @@ public class SourceCodeVisitor extends ASTVisitor{
 
     public boolean visit(VariableDeclarationFragment node) {
         SimpleName name = node.getName();
+//        System.out.println("Single Variable " + node);
+
         this.declaredNames.add(name.getIdentifier());
 //        System.out.println("------------------------");
 //        System.out.println("Declaration of '" + name + "' at line"
 //                + cu.getLineNumber(name.getStartPosition()));
-        return false; // do not continue
+//        for (Iterator iter = node.fragments().iterator(); iter.hasNext();) {
+//            System.out.println("------------------");
+//
+//            VariableDeclarationFragment fragment = (VariableDeclarationFragment) iter.next();
+//            IVariableBinding binding = fragment.resolveBinding();
+//
+//            System.out.println("binding variable declaration: " +binding.getVariableDeclaration());
+//            System.out.println("binding: " +binding);
+//        }
+//        IVariableBinding binding = node.resolveBinding();
+//        System.out.println("Binding " + name + " to " + binding);
+
+
+
+        return true;
     }
+
+    public boolean visit (SingleVariableDeclaration node) {
+//        System.out.println("Variable " + node.getName() + " de type " + node.getType());
+        return true;
+    }
+
+//    public boolean visit(VariableDeclaration node) {
+//        System.out.println(node.getName() + "binded to " + node.resolveBinding());
+//        return true;
+//    }
 
 
     @Override
@@ -213,6 +239,12 @@ public class SourceCodeVisitor extends ASTVisitor{
 //            System.out.println("Classe Appelante : " + currentType.getName());
 
             String miName = currentType.getName() + "." + methodDeclaration.getName() + " ->  " + methodInvocation.getExpression() + "." +  methodInvocation.getName();
+            System.out.println("Methode " + methodDeclaration.getName() + " ->  " + methodInvocation.getExpression() + "." +  methodInvocation.getName());
+            System.out.println("\ttypeBinding : " + methodInvocation.resolveTypeBinding());
+            System.out.println("\tBinding : " + methodDeclaration.resolveBinding().getDeclaringClass());
+            System.out.println("\tBinding class: " + methodDeclaration.resolveBinding().getDeclaringClass().getName());
+
+
 //            System.out.println(miName);
 
 

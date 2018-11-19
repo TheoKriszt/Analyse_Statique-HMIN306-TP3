@@ -19,6 +19,7 @@ public class Implique extends Prop {
 	}
 
 	@Override
+	@Override
 	void affichage() {
 		p1.affichage();
 		System.out.print( " ⇒ " );

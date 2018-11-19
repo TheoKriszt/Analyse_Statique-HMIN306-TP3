@@ -6,6 +6,7 @@ import fr.kriszt.theo.visitors.SourceCodeVisitor;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
+import org.eclipse.jdt.internal.core.JavaProject;
 
 import java.io.*;
 
@@ -16,16 +17,34 @@ public class Main {
 //    public static final String DEFAULT_SOURCE_PATH = "/auto_home/tkriszt/workspace/Resolution/";
 //    public static final String DEFAULT_SOURCE_PATH = "lib/sourceProjet/";
     public static final String PARSEABLE_EXTENSION = "java";
-    private static final ASTParser parser = ASTParser.newParser(AST.JLS4);
+    private static final ASTParser parser = ASTParser.newParser(AST.JLS10);
     private static CompilationUnit cu;
     private static SourceCodeVisitor visitor;
 
     public static void parse(String str, ApplicationEntity application) {
-//        ASTParser parser = ASTParser.newParser(AST.JLS4);
         parser.setSource(str.toCharArray());
         parser.setKind(ASTParser.K_COMPILATION_UNIT);
+//        parser.setEnvironment(null, null, null, true);
+
+        parser.setEnvironment(null, new String[]{DEFAULT_SOURCE_PATH}, null, false);
+        parser.setUnitName("C1.java");
+        parser.setResolveBindings(true);
+        parser.setBindingsRecovery(true);
 
         cu = (CompilationUnit) parser.createAST(null);
+
+        if (cu.getAST().hasBindingsRecovery()){
+            System.out.println("Binding recovery activated");
+        }else {
+            System.out.println("Binding recovery is not activated.");
+        }
+
+        if (cu.getAST().hasResolvedBindings()){
+            System.out.println("Binding activated");
+        }else {
+            System.out.println("Binding is not activated.");
+        }
+
         visitor = new SourceCodeVisitor(cu, str, application);
 
 //        System.err.println(linesNumber + " lines found");
@@ -99,7 +118,7 @@ public class Main {
 
 
 
-        application.printResume( 5 );
+//        application.printResume( 5 );
 
         MethodInvocationEntity.bind(application);
 

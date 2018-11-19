@@ -2,17 +2,19 @@
   <library name="commons-io-2.4">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/ast/commons-io-2.4.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.core.contenttype_3.4.200.v20130326-1255.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.core.jobs_3.5.300.v20130429-1813.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.core.resources_3.8.101.v20130717-0806.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.core.runtime_3.9.100.v20131218-1515.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.equinox.preferences_3.5.100.v20130422-1538.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core_3.9.2.v20140114-1555.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jface.text_3.8.101.v20130802-1147.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.osgi_3.9.1.v20140110-1610.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.core.contenttype-3.7.100.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.core.jobs-3.10.100.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.core.resources-3.13.100.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.core.runtime-3.15.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.equinox.common-3.10.100.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.equinox.preferences-3.7.200.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core-3.15.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jface.text-3.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ast/org.eclipse.osgi-3.13.100.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

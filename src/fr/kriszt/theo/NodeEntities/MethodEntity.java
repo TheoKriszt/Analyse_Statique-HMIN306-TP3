@@ -19,7 +19,8 @@ public class MethodEntity  extends NodeEntity{
     public MethodEntity(String toString, TypeEntity currentType) {
         super(toString);
         this.typeEntity = currentType;
-        System.out.println("Methode " + this);
+//        System.out.println("Methode " + this);
+
 
     }
 

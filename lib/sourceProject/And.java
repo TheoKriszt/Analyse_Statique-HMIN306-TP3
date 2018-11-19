@@ -18,6 +18,10 @@ public class And extends Prop {
 		return p2;
 	}
 
+	public static String staticPrint(String message){
+		System.out.println(message);
+	}
+
 
 
 //	@Override
@@ -26,8 +30,7 @@ public class And extends Prop {
 		p1.affichage();
 		System.out.print( " ∧ " );
 		p2.affichage();
-		System.out.print(")");
-		
+		And.staticPrint(")");
 	}
 	
 	public String toString() {
