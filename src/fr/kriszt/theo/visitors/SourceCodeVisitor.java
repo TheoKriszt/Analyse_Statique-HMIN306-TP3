@@ -239,10 +239,10 @@ public class SourceCodeVisitor extends ASTVisitor{
 //            System.out.println("Classe Appelante : " + currentType.getName());
 
             String miName = currentType.getName() + "." + methodDeclaration.getName() + " ->  " + methodInvocation.getExpression() + "." +  methodInvocation.getName();
-            System.out.println("Methode " + methodDeclaration.getName() + " ->  " + methodInvocation.getExpression() + "." +  methodInvocation.getName());
-            System.out.println("\ttypeBinding : " + methodInvocation.resolveTypeBinding());
-            System.out.println("\tBinding : " + methodDeclaration.resolveBinding().getDeclaringClass());
-            System.out.println("\tBinding class: " + methodDeclaration.resolveBinding().getDeclaringClass().getName());
+//            System.out.println("Methode " + methodDeclaration.getName() + " ->  " + methodInvocation.getExpression() + "." +  methodInvocation.getName());
+//            System.out.println("\ttypeBinding : " + methodInvocation.resolveTypeBinding());
+//            System.out.println("\tBinding : " + methodDeclaration.resolveBinding().getDeclaringClass());
+//            System.out.println("\tBinding class: " + methodDeclaration.resolveBinding().getDeclaringClass().getName());
 
 
 //            System.out.println(miName);

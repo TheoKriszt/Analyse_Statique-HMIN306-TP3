@@ -3,12 +3,14 @@ package fr.kriszt.theo;
 import fr.kriszt.theo.NodeEntities.ApplicationEntity;
 import fr.kriszt.theo.NodeEntities.MethodInvocationEntity;
 import fr.kriszt.theo.visitors.SourceCodeVisitor;
+import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jdt.internal.core.JavaProject;
 
 import java.io.*;
+import java.util.Map;
 
 public class Main {
 
@@ -18,32 +20,45 @@ public class Main {
 //    public static final String DEFAULT_SOURCE_PATH = "lib/sourceProjet/";
     public static final String PARSEABLE_EXTENSION = "java";
     private static final ASTParser parser = ASTParser.newParser(AST.JLS10);
-    private static CompilationUnit cu;
+    private static CompilationUnit cu ;
     private static SourceCodeVisitor visitor;
 
-    public static void parse(String str, ApplicationEntity application) {
+    public static void createParser(String path){
+
+    }
+
+    public static void parse(File f, ApplicationEntity application) throws IOException {
+        String str = readFileToString(f.getAbsolutePath());
         parser.setSource(str.toCharArray());
         parser.setKind(ASTParser.K_COMPILATION_UNIT);
 //        parser.setEnvironment(null, null, null, true);
 
-        parser.setEnvironment(null, new String[]{DEFAULT_SOURCE_PATH}, null, false);
+        System.out.println("DEFAULT SOURCE : " + DEFAULT_SOURCE_PATH);
+        System.out.println("current source : " + f.toString());
+
+        Map<String, String> options = JavaCore.getOptions();
+        options.put(JavaCore.COMPILER_COMPLIANCE, JavaCore.VERSION_1_6);
+        options.put(JavaCore.COMPILER_CODEGEN_TARGET_PLATFORM, JavaCore.VERSION_1_6);
+        options.put(JavaCore.COMPILER_SOURCE, JavaCore.VERSION_1_6);
+        parser.setCompilerOptions(options);
+        parser.setEnvironment(null, new String[]{f.toString()}, null, false);
         parser.setUnitName("C1.java");
         parser.setResolveBindings(true);
         parser.setBindingsRecovery(true);
 
         cu = (CompilationUnit) parser.createAST(null);
 
-        if (cu.getAST().hasBindingsRecovery()){
-            System.out.println("Binding recovery activated");
-        }else {
-            System.out.println("Binding recovery is not activated.");
-        }
-
-        if (cu.getAST().hasResolvedBindings()){
-            System.out.println("Binding activated");
-        }else {
-            System.out.println("Binding is not activated.");
-        }
+//        if (cu.getAST().hasBindingsRecovery()){
+//            System.out.println("Binding recovery activated");
+//        }else {
+//            System.out.println("Binding recovery is not activated.");
+//        }
+//
+//        if (cu.getAST().hasResolvedBindings()){
+//            System.out.println("Binding activated");
+//        }else {
+//            System.out.println("Binding is not activated.");
+//        }
 
         visitor = new SourceCodeVisitor(cu, str, application);
 
@@ -100,7 +115,7 @@ public class Main {
                     readDirectory(f.getCanonicalPath(), application);
                 } else if(f.isFile() && f.getName().endsWith(PARSEABLE_EXTENSION)){
 //                    System.err.println("parsing file " + f.getName());
-                    parse(readFileToString(f.getAbsolutePath()), application);
+                    parse(f, application);
 //                    return;
                 }
             }
