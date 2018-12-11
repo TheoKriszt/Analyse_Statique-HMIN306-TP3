@@ -3,7 +3,10 @@ package fr.kriszt.theo.visitors;
 import fr.kriszt.theo.NodeEntities.*;
 import org.eclipse.jdt.core.dom.*;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -12,41 +15,15 @@ import java.util.regex.Pattern;
  */
 public class SourceCodeVisitor extends ASTVisitor{
 
-    public static final String METHODS_KEY = "methods";
-    public static final String LINES_NB_KEY = "lines number";
-    public static final String ATTRIBUTES_KEY = "methods";
-    public static final String PARAMETERS_KEY = "methods";
-
     private ApplicationEntity application;
     private Set declaredNames = new HashSet();
     private Set declaredPackages = new HashSet();
+    private Set declaredVariableDeclarationFragment = new HashSet();
     private TreeMap<String, HashMap<String, Integer>> declaredClasses = new TreeMap<>();
     private static int totalLines = 0;
     private static int nonBlankLines = 0;
 
-//    private static NodeEntity application = new NodeEntity("");
-
     private PackageEntity currentPackage;
-
-    // METHOD
-
-
-    /**
-     *  1. Nombre de classes dans l'application : 0  => DECLAREDcLASSES
-     *  2. Nombre de lignes de code dans l'application : 105 => totalLines
-     *  3. Nombre total de méthodes de l'application : 0 => classes.methods
-     *  4. Nombre total de packages dans l'application : packagesCount
-     *  5. Nombre moyen de méthodes par classe : ---
-     *  6. Nombre moyen de lignes de codes par méthode : methods.lines
-     *  7. Nombre moyen d'attributs par classe : classes.attributes
-     *  8. Les 10% des classes qui possèdent le plus grand nombre de méthodes :
-     *  9. Les 10% des classes qui possèdent le plus grand nombre d'attributs :
-     * 10. Les classes qui font partie en même temps des deux catégories précédentes :
-     * 11. Les classes qui possèdent plus de X méthodes :
-     * 12. Les 10% de méthodes qui possèdent le plus grand nombre de lignes de code (par classe) :
-     * 13. Le nombre maximal de paramètres par rapport à toutes les méthodes de l'application :
-     */
-
 
     private CompilationUnit cu;
     private TypeEntity currentType;
@@ -65,24 +42,18 @@ public class SourceCodeVisitor extends ASTVisitor{
 
     public boolean visit(VariableDeclarationFragment node) {
         SimpleName name = node.getName();
-//        System.out.println("Single Variable " + node);
+        declaredVariableDeclarationFragment.add(node);
 
         this.declaredNames.add(name.getIdentifier());
 //        System.out.println("------------------------");
-//        System.out.println("Declaration of '" + name + "' at line"
-//                + cu.getLineNumber(name.getStartPosition()));
-//        for (Iterator iter = node.fragments().iterator(); iter.hasNext();) {
-//            System.out.println("------------------");
-//
-//            VariableDeclarationFragment fragment = (VariableDeclarationFragment) iter.next();
-//            IVariableBinding binding = fragment.resolveBinding();
-//
-//            System.out.println("binding variable declaration: " +binding.getVariableDeclaration());
-//            System.out.println("binding: " +binding);
-//        }
-//        IVariableBinding binding = node.resolveBinding();
-//        System.out.println("Binding " + name + " to " + binding);
+        System.out.println("Declaration of '" + name + "' at line " + cu.getLineNumber(name.getStartPosition()));
 
+        IVariableBinding binding = node.resolveBinding();
+        System.out.println("Binding " + name + " to " + binding);
+        if (binding == null){
+            System.err.println("no binding !");
+        }else
+        System.out.println("Binding type : " + binding.getType());
 
 
         return true;
@@ -205,6 +176,9 @@ public class SourceCodeVisitor extends ASTVisitor{
 
     public boolean visit(MethodInvocation methodInvocation) {
 
+        IMethodBinding binding = methodInvocation.resolveMethodBinding();
+        if ((binding.getModifiers() & Modifier.STATIC) > 0 )
+
         try
         {
             ASTNode parent = methodInvocation.getParent();
@@ -305,8 +279,6 @@ public class SourceCodeVisitor extends ASTVisitor{
 
         if (removeBlankLines){
             Matcher emptyMatcher = Pattern.compile("^$|^\\s$", Pattern.MULTILINE).matcher(str);
-//            Matcher emptyMatcher = Pattern.compile("^\\s*$", Pattern.MULTILINE).matcher(str);
-//            Matcher emptyMatcher = Pattern.compile("\\s*$", Pattern.MULTILINE).matcher(str);
             while (emptyMatcher.find())
             {
                 lines --;

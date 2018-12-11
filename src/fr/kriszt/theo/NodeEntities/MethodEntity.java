@@ -7,7 +7,7 @@ import java.util.*;
 public class MethodEntity  extends NodeEntity{
 
     public ArrayList<String> params = new ArrayList<>();
-    private MethodDeclaration methodDeclaration = null;
+    public MethodDeclaration methodDeclaration = null;
     private TypeEntity typeEntity = null;
     public int countLines = 0;
 

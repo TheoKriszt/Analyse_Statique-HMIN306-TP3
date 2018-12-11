@@ -2,9 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cdf5c7c-0603-4808-80dd-edcf6916b365" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sourceProject/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sourceProject/ExampleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sourceProject/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/And.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/And.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/AppFonction.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/AppFonction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Bottom.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Bottom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Clause.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Clause.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/DPLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/DPLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Equivalent.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Equivalent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Exists.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Exists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Forall.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Forall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Implique.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Implique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Not.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Not.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Or.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Or.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Predicat.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Predicat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Prop.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Prop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Terme.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Terme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Top.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Top.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Var.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject_old/Var.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ApplicationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/ApplicationEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/MethodEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/MethodEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/visitors/SourceCodeVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/visitors/SourceCodeVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/And.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/AppFonction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Bottom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Clause.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/DPLL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Equivalent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Exists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Forall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Implique.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Not.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Or.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Predicat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Prop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Terme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Top.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Var.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -13,6 +60,31 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="131">
+                    <caret line="49" selection-start-line="49" selection-end-line="49" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                      <element signature="e#685#716#0" expanded="true" />
+                      <element signature="method#readFileToString#0;class#Main#0" />
+                      <element signature="method#readDirectory#0;class#Main#0" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1433008842">
@@ -30,26 +102,31 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="10157" />
+          <entry key="java" value="11419" />
           <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10157" />
+          <entry key="JAVA" value="11419" />
           <entry key="PLAIN_TEXT" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="5" />
-          <entry key="java" value="61" />
+          <entry key="class" value="9" />
+          <entry key="java" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="61" />
+          <entry key="CLASS" value="9" />
+          <entry key="JAVA" value="68" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -91,41 +168,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-813">
-              <caret line="242" column="36" selection-start-line="242" selection-start-column="36" selection-end-line="242" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/sourceProject/And.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+            <state relative-caret-position="361">
+              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
               <folding>
-                <element signature="method#readFileToString#0;class#Main#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#SourceCodeVisitor#0;class#SourceCodeVisitor#0" />
+                <element signature="method#toString#0;class#SourceCodeVisitor#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/ASTParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="823" selection-start-line="823" selection-end-line="823" />
             </state>
           </provider>
         </entry>
@@ -133,8 +185,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="51" column="56" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+            <state relative-caret-position="300">
+              <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#signature#0;class#MethodInvocationEntity#0" />
@@ -144,24 +196,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java">
+        <entry file="file://$PROJECT_DIR$/lib/sourceProject/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-                <element signature="method#getMaxParams#0;class#ApplicationEntity#0" />
-                <element signature="method#getClasses#0;class#ApplicationEntity#0" />
+                <element signature="e#222#223#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,16 +215,12 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Singleton" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>herbrandiser</find>
-      <find>Nom de la methode</find>
-      <find>Compar</find>
-      <find>Pa</find>
-      <find>Package trouv</find>
       <find>clausifier(</find>
       <find>DPLL</find>
       <find>MethodI</find>
@@ -209,6 +246,11 @@
       <find>K_C</find>
       <find>Methode</find>
       <find>activated</find>
+      <find>DEFAUL</find>
+      <find>parser</find>
+      <find>createAST</find>
+      <find>envir</find>
+      <find>MethodIn</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/../lib</dir>
@@ -216,6 +258,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -237,13 +284,15 @@
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java" />
         <option value="$PROJECT_DIR$/lib/sourceProject/Implique.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" />
         <option value="$PROJECT_DIR$/lib/sourceProject/And.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/ParserUtils.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/Parser.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" />
+        <option value="$PROJECT_DIR$/lib/sourceProject/Person.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" />
       </list>
     </option>
   </component>
@@ -253,9 +302,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1300" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="960" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,60 +313,56 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="sourceProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="theo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="AnalyseStatique" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnalyseStatique" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="theo" type="462c0819:PsiDirectoryNode" />
-              <item name="NodeEntities" type="462c0819:PsiDirectoryNode" />
+              <item name="visitors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Visit&#9;FILE&#9;file:///auto_home/tkriszt/IdeaProjects/Evolution_restructuration/AnalyseStatique/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542668547574" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544528900012" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ast/org.eclipse.osgi-3.13.100.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -324,9 +370,8 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\deprecated" />
-      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\ast" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.kriszt.theo.visitors" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/sourceProject/count" />
@@ -335,9 +380,167 @@
       <recent name="$PROJECT_DIR$/lib/ast" />
       <recent name="$PROJECT_DIR$/res" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="fr.kriszt.theo.visitors" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\deprecated" />
+      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\ast" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/commons_io_2_4.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/sourceProject/And.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/NodeEntities/MethodEntity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/fr/kriszt/theo/visitors/SourceCodeVisitor.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/And.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/sourceProject/Implique.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/Main.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.core.contenttype-3.7.100.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.core.jobs-3.10.100.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.core.resources-3.13.100.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.core.runtime-3.15.0.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.equinox.common-3.10.100.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.equinox.preferences-3.7.200.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core-3.15.0.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.jface.text-3.14.0.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.osgi-3.13.100.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/deprecated/org.eclipse.core.contenttype_3.4.200.v20130326-1255.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/deprecated/org.eclipse.core.jobs_3.5.300.v20130429-1813.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/deprecated/org.eclipse.core.resources_3.8.101.v20130717-0806.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/deprecated/org.eclipse.core.runtime_3.9.100.v20131218-1515.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/deprecated/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/deprecated/org.eclipse.equinox.preferences_3.5.100.v20130422-1538.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/deprecated/org.eclipse.jdt.core_3.9.2.v20140114-1555.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/deprecated/org.eclipse.jface.text_3.8.101.v20130802-1147.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/deprecated/org.eclipse.osgi_3.9.1.v20140110-1610.jar</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.core.contenttype_3.4.200.v20130326-1255.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.core.jobs_3.5.300.v20130429-1813.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.core.resources_3.8.101.v20130717-0806.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.core.runtime_3.9.100.v20131218-1515.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.equinox.preferences_3.5.100.v20130422-1538.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core_3.9.2.v20140114-1555.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.jface.text_3.8.101.v20130802-1147.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/ast/org.eclipse.osgi_3.9.1.v20140110-1610.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/ast/org.eclipse.core.contenttype_3.4.200.v20130326-1255.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/ast/org.eclipse.core.jobs_3.5.300.v20130429-1813.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/ast/org.eclipse.core.resources_3.8.101.v20130717-0806.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/ast/org.eclipse.core.runtime_3.9.100.v20131218-1515.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/ast/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/ast/org.eclipse.equinox.preferences_3.5.100.v20130422-1538.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/ast/org.eclipse.jdt.core_3.9.2.v20140114-1555.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/ast/org.eclipse.jface.text_3.8.101.v20130802-1147.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/AnalyseStatique/ast/org.eclipse.osgi_3.9.1.v20140110-1610.jar</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -407,10 +610,10 @@
     <option name="totallyTimeSpent" value="22049000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1300" height="1040" extended-state="0" />
+    <frame x="-3" y="25" width="1926" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15967742" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13180363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -419,7 +622,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74596775" visible="true" weight="0.34502262" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74596775" visible="true" weight="0.3692142" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3988889" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,7 +631,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32976446" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25403225" side_tool="true" visible="true" weight="0.34502262" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.32666665" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.32615715" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2497332" />
@@ -480,14 +683,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update libs,&#10;Binding types" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeParser.java" />
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/count/Count.java" />
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/ICountableVisitor.java" />
-    <entry file="file://$PROJECT_DIR$/src/micka/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/micka/step2/Parser.java" />
-    <entry file="file://$PROJECT_DIR$/src/micka/step2/MethodInvocationVisitor.java" />
-    <entry file="file://$PROJECT_DIR$/src/micka/step2/MethodDeclarationVisitor.java" />
-    <entry file="file://$PROJECT_DIR$/src/micka/step2/VariableDeclarationFragmentVisitor.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/PackageVisitor.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/ClassVisitor.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/TypeSpecifier.java" />
@@ -513,67 +708,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/AppFonction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Clause.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/AppFonction.java" />
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Clause.java" />
     <entry file="jar://$USER_HOME$/lib/jdk-11/lib/src.zip!/java.base/java/lang/Object.java" />
     <entry file="jar://$USER_HOME$/lib/jdk-11/lib/src.zip!/java.base/java/util/TimSort.java" />
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Top.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Not.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-186">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/DPLL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Predicat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Top.java" />
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Not.java" />
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/DPLL.java" />
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Generator.java" />
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Predicat.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="375">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Implique.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Implique.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -581,30 +735,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core_3.9.2.v20140114-1555.jar!/org/eclipse/jdt/core/dom/ITypeBinding.class" />
     <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core_3.9.2.v20140114-1555.jar!/org/eclipse/jdt/core/dom/Expression.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Object.java" />
     <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core_3.9.2.v20140114-1555.jar!/org/eclipse/jdt/core/dom/ASTNode.class" />
     <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core_3.9.2.v20140114-1555.jar!/org/eclipse/jdt/core/dom/MethodInvocation.class" />
     <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core_3.9.2.v20140114-1555.jar!/org/eclipse/jdt/core/dom/AST.class" />
@@ -615,28 +748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/AST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5222">
-          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/AST.java" />
     <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar!/org/eclipse/core/runtime/SubMonitor.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/ParserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/ClassLoader.java" />
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/ParserUtils.java" />
     <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core-3.15.0.jar!/org/eclipse/jdt/core/dom/IBinding.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -644,52 +759,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/IBinding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="168" column="15" selection-start-line="168" selection-start-column="15" selection-end-line="168" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/internal/compiler/lookup/MethodBinding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="643" column="17" selection-start-line="643" selection-start-column="17" selection-end-line="643" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/MethodBinding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="315" column="33" selection-start-line="315" selection-start-column="33" selection-end-line="315" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/Modifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="283" column="28" selection-start-line="283" selection-start-column="28" selection-end-line="283" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/And.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="51" column="56" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#signature#0;class#MethodInvocationEntity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/IBinding.java" />
+    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/internal/compiler/lookup/MethodBinding.java" />
+    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/MethodBinding.java" />
+    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/Modifier.java" />
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/And.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -697,39 +771,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/ASTParser.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core-3.15.0.jar!/org/eclipse/jdt/core/dom/SimpleName.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+          <folding>
+            <element signature="e#3515#3516#0" expanded="true" />
+            <element signature="e#3553#3554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/DefaultBindingResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="487" column="128" lean-forward="true" selection-start-line="487" selection-start-column="128" selection-end-line="487" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core-3.15.0.jar!/org/eclipse/jdt/core/dom/BindingResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+          <folding>
+            <element signature="e#1720#1721#0" expanded="true" />
+            <element signature="e#1747#1748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core-3.15.0.jar!/org/eclipse/jdt/core/dom/VariableBinding.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="180" column="46" lean-forward="true" selection-start-line="180" selection-start-column="46" selection-end-line="180" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core-3.15.0.jar!/org/eclipse/jdt/core/dom/IVariableBinding.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/CompilationUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="845" column="15" selection-start-line="845" selection-start-column="15" selection-end-line="845" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="392">
+          <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#286#287#0" expanded="true" />
             <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="method#printResume#0;class#ApplicationEntity#0" />
             <element signature="method#getMaxParams#0;class#ApplicationEntity#0" />
-            <element signature="method#getClasses#0;class#ApplicationEntity#0" />
+            <element signature="method#getClassesWithMinMethods#0;class#ApplicationEntity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#685#716#0" expanded="true" />
+            <element signature="method#readFileToString#0;class#Main#0" />
+            <element signature="method#readDirectory#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#signature#0;class#MethodInvocationEntity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-813">
-          <caret line="242" column="36" selection-start-line="242" selection-start-column="36" selection-end-line="242" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/ASTParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="823" selection-start-line="823" selection-end-line="823" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+        <state relative-caret-position="361">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
           <folding>
-            <element signature="method#readFileToString#0;class#Main#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#SourceCodeVisitor#0;class#SourceCodeVisitor#0" />
+            <element signature="method#toString#0;class#SourceCodeVisitor#0" />
           </folding>
         </state>
       </provider>

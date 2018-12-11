@@ -1,10 +1,12 @@
 package fr.kriszt.theo.NodeEntities;
 
+import java.io.File;
 import java.util.*;
 
 public class ApplicationEntity extends NodeEntity {
 
     private ArrayList<PackageEntity> packages = new ArrayList<>();
+    private List<File> srcFiles = new ArrayList<>();
     private int totalLines = 0;
     private int nonBlankLines = 0;
 
@@ -14,6 +16,14 @@ public class ApplicationEntity extends NodeEntity {
 
     public void addPackage(PackageEntity packageEntity) {
         packages.add(packageEntity);
+    }
+
+    public void addSourceFile(File srcPath){
+        srcFiles.add(srcPath);
+    }
+
+    public List<File> getSrcFiles(){
+        return srcFiles;
     }
 
     public void printResume(int minMethods) {
@@ -71,7 +81,7 @@ public class ApplicationEntity extends NodeEntity {
         nonBlankLines += countLines;
     }
 
-    public List<ClassEntity> getClasses(){
+    List<ClassEntity> getClasses(){
         List<ClassEntity> classes = new ArrayList<>();
 
         for (PackageEntity myPackage : packages){
