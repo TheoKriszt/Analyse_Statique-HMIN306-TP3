@@ -102,6 +102,7 @@ public class SourceCodeVisitor extends ASTVisitor{
 
         if (methodBinding == null){
             System.err.println("methodBinding for " + methodInvocation + " is null");
+            System.err.println("also type binding gave " + typeBinding);
             return true;
         }
 

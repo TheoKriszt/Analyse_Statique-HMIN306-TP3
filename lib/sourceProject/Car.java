@@ -6,6 +6,7 @@ public class Car {
 
     public void setOwner(Person o){
         owner = o;
+        owner.ownedCars.add(this);
     }
 
 }
