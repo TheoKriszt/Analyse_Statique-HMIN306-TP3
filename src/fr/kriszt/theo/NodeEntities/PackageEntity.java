@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class PackageEntity  extends NodeEntity{
 
-    protected ArrayList<InterfaceEntity> interfaces = new ArrayList<>();
-    protected ArrayList<ClassEntity> classes = new ArrayList<>();
+    private ArrayList<InterfaceEntity> interfaces = new ArrayList<>();
+    ArrayList<ClassEntity> classes = new ArrayList<>();
 
     public PackageEntity(String n) {
         super(n);

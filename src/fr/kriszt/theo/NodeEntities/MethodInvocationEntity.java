@@ -1,7 +1,6 @@
 package fr.kriszt.theo.NodeEntities;
 
 import org.eclipse.jdt.core.dom.*;
-import org.eclipse.jdt.internal.compiler.batch.ModuleFinder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -84,7 +83,7 @@ public class MethodInvocationEntity extends NodeEntity {
 
     }
 
-    public String signature(){
+    private String signature(){
         String returnType;
         if (callingMethod.isConstructor()){
             returnType = callingClass.name;

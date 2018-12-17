@@ -3,15 +3,19 @@ package fr.kriszt.theo.NodeEntities;
 import org.eclipse.jdt.core.dom.Type;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public abstract class TypeEntity extends NodeEntity {
 
-    protected ArrayList<MethodEntity> methods = new ArrayList<>();
-    protected String superType = null;
-    protected ArrayList<String> attributes = new ArrayList<>();
+    private static HashSet<TypeEntity> declaredTypes = new HashSet<>();
 
-    public TypeEntity(String n) {
+    ArrayList<MethodEntity> methods = new ArrayList<>();
+    private String superType = null;
+    ArrayList<String> attributes = new ArrayList<>();
+
+    TypeEntity(String n) {
         super(n);
+        declaredTypes.add(this);
     }
 
     public void addMethod(MethodEntity m){

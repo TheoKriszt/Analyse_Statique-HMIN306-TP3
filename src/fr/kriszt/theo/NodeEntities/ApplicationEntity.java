@@ -32,7 +32,7 @@ public class ApplicationEntity extends NodeEntity {
                 + " 2. Nombre de lignes de code dans l'application : " + totalLines + ", dont " + nonBlankLines + " non vides\n"
                 + " 3. Nombre total de méthodes de l'application : " + countApplicationMethods() + "\n"
                 + " 4. Nombre total de packages dans l'application : " + packages.size() + "\n"
-                + " 5. Nombre moyen de méthodes par classe : " + getAverageMethodsPerClass() + "\n"
+                + " 5. Nombre moyen de méthodes par classe : " + String.format("%.2f", getAverageMethodsPerClass()) + "\n"
                 + " 6. Nombre moyen de lignes de codes par méthode : " + "\n"
                 + " 7. Nombre moyen d'attributs par classe : " + getAverageAttributesPerClass() + "\n"
                 + " 8. Les 10% des classes qui possèdent le plus grand nombre de méthodes : " + top10Methods() + "\n"
@@ -105,9 +105,7 @@ public class ApplicationEntity extends NodeEntity {
             avg += c.getMethods().size();
         }
 
-
         avg /= (float) countClasses();
-//        System.err.println("avg methods : " + avg);
         return avg;
     }
 
@@ -117,11 +115,11 @@ public class ApplicationEntity extends NodeEntity {
         for (ClassEntity c : getClasses()){
             avg += c.attributes.size();
         }
-//        System.out.println("sum attr : " + avg);
         avg /= (float) countClasses();
         return avg;
     }
 
+    @SuppressWarnings("Duplicates")
     private List<ClassEntity> getClassTopTier(List<ClassEntity> classes){
         ArrayList<ClassEntity> top = new ArrayList<>();
         if (!classes.isEmpty()) {
@@ -135,6 +133,7 @@ public class ApplicationEntity extends NodeEntity {
         return top;
     }
 
+    @SuppressWarnings("Duplicates")
     private List<MethodEntity> getMethodTopTier(List<MethodEntity> classes){
         ArrayList<MethodEntity> top = new ArrayList<>();
         if (!classes.isEmpty()) {

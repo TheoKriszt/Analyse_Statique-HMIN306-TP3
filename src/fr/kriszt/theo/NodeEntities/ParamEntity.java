@@ -2,7 +2,7 @@ package fr.kriszt.theo.NodeEntities;
 
 public class ParamEntity extends NodeEntity {
 
-    protected String type;
+    private String type;
 
     public ParamEntity(String n, String type) {
         super(n);
