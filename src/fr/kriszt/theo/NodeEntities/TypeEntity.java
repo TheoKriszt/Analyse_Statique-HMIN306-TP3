@@ -4,6 +4,7 @@ import org.eclipse.jdt.core.dom.Type;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Set;
 
 public abstract class TypeEntity extends NodeEntity {
 
@@ -16,6 +17,10 @@ public abstract class TypeEntity extends NodeEntity {
     TypeEntity(String n) {
         super(n);
         declaredTypes.add(this);
+    }
+
+    public static Set<TypeEntity> getDeclaredTypes() {
+        return declaredTypes;
     }
 
     public void addMethod(MethodEntity m){
