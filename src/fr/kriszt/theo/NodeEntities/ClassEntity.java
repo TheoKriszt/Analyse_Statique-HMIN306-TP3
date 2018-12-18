@@ -10,10 +10,10 @@ public class ClassEntity extends TypeEntity {
 
     private PackageEntity packageDeclaration;
 
-    @Override
-    public ArrayList<MethodEntity> getMethods() {
-        return methods;
-    }
+//    @Override
+//    public ArrayList<MethodEntity> getMethods() {
+//        return methods;
+//    }
 
     private ArrayList<MethodEntity> methods = new ArrayList<>();
 
@@ -27,9 +27,9 @@ public class ClassEntity extends TypeEntity {
         return declaration.equals(typeDeclaration);
     }
 
-    public void addMethod(MethodEntity me){
-        methods.add(me);
-    }
+//    public void addMethod(MethodEntity me){
+//        methods.add(me);
+//    }
 
     public boolean equals(Object o){
         return o instanceof ClassEntity && ((ClassEntity)o).getName().equals(getName());

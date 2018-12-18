@@ -3,7 +3,6 @@ package fr.kriszt.theo;
 import fr.kriszt.theo.NodeEntities.*;
 import org.eclipse.jdt.core.dom.*;
 
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -19,7 +18,7 @@ public class SourceCodeVisitor extends ASTVisitor{
 
 
 
-    public SourceCodeVisitor(String source, ApplicationEntity application){
+    SourceCodeVisitor(String source, ApplicationEntity application){
         this.application = application;
 
         application.addLines( countLines(source, false) );
@@ -58,12 +57,12 @@ public class SourceCodeVisitor extends ASTVisitor{
             currentType.addAttribute( f.modifiers() + " " + f.getType() + " " +  ((VariableDeclarationFragment)f.fragments().get(0)).getName());
         }
 
+        currentType.setLinesCount( countLines(node.toString(), false) );
+
         for (MethodDeclaration m : node.getMethods()) {
 
             MethodEntity methodEntity = new MethodEntity(m.getName().toString(), m, currentType);
             methodEntity.addParams(m.parameters());
-
-            currentType.addMethod(methodEntity);
 
             String returnType;
             if (m.isConstructor()){
@@ -95,7 +94,6 @@ public class SourceCodeVisitor extends ASTVisitor{
 
 
         if (expression == null) {
-//            System.err.println("Expression for " + methodInvocation + " is null");
             return true;
         }
 

@@ -21,6 +21,7 @@ public class MethodInvocationEntity extends NodeEntity {
         this.callingClass = currentType;
 
         invocations.add(this);
+        System.out.println("===> MIE :: " + this);
     }
 
 

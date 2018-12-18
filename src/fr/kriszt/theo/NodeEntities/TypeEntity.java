@@ -10,9 +10,10 @@ public abstract class TypeEntity extends NodeEntity {
 
     private static HashSet<TypeEntity> declaredTypes = new HashSet<>();
 
-    ArrayList<MethodEntity> methods = new ArrayList<>();
+    Set<MethodEntity> methods = new HashSet<>();
     private String superType = null;
     ArrayList<String> attributes = new ArrayList<>();
+    private int linesCount = -1;
 
     TypeEntity(String n) {
         super(n);
@@ -27,7 +28,7 @@ public abstract class TypeEntity extends NodeEntity {
         methods.add(m);
     }
 
-    public ArrayList<MethodEntity> getMethods() {
+    public Set<MethodEntity> getMethods() {
         return methods;
     }
 
@@ -42,4 +43,11 @@ public abstract class TypeEntity extends NodeEntity {
         attributes.add(attr);
     }
 
+    public void setLinesCount(int countLines) {
+        linesCount = countLines;
+    }
+
+    public int getLinesCount() {
+        return linesCount;
+    }
 }

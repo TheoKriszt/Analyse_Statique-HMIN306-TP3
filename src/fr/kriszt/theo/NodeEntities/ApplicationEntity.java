@@ -169,30 +169,15 @@ public class ApplicationEntity extends NodeEntity {
         List<MethodEntity> methods = new ArrayList<>();
 
         for ( ClassEntity ce : classes ){
-            List<MethodEntity> subMethods = ce.getMethods();
-            subMethods.sort((o1, o2) -> {
+            Set<MethodEntity> subMethods = ce.getMethods();
+            List<MethodEntity> methodsList = new ArrayList<>(subMethods);
+            methodsList.sort((o1, o2) -> {
                 if (o1.countLines == o2.countLines) return 0;
                 return o1.countLines > o2.countLines ? -1 : 1;
             });
-            methods.addAll(getMethodTopTier(subMethods));
+            methods.addAll(getMethodTopTier(methodsList));
         }
 
-
-//        List<MethodEntity> methods = getIncomingMethods();
-////        methods.sort((o1, o2) -> o1.countLines > o2.countLines ? -1 : 1);
-//        System.err.println("tri d'une liste de taille " + methods.size());
-//        methods.sort((o1, o2) -> {
-////            System.err.println("Comparaison de " + o1 + " et " + o2);
-//
-////            if (o1 == (o2)) return 0;
-//            if (o1.equals(o2)) return 0;
-//            return o1.countLines > o2.countLines ? -1 : 1;
-//
-//        });
-
-//        for( MethodEntity m : methods ){
-//            System.err.println(m + " : " + m.countLines);
-//        }
 
         return methods;
 

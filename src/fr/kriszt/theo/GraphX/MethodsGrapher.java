@@ -4,17 +4,17 @@ import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.util.mxConstants;
 import com.mxgraph.view.mxGraph;
 import fr.kriszt.theo.NodeEntities.MethodEntity;
-import fr.kriszt.theo.NodeEntities.MethodInvocationEntity;
 import fr.kriszt.theo.NodeEntities.NodeEntity;
 import fr.kriszt.theo.NodeEntities.TypeEntity;
 import fr.kriszt.theo.Relation;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
-public class Grapher extends JFrame {
+public class MethodsGrapher extends JFrame {
 
 
     private static final int	DEFAULT_WIDTH		= 100;
@@ -29,27 +29,24 @@ public class Grapher extends JFrame {
     private Map<String, Integer> nodesAxis = new HashMap<>();
     private Map<String, Object> typesNodes = new HashMap<>();
 
-
-    String roundEdgesStyle = mxConstants.STYLE_EDGE + "=" + mxConstants.EDGESTYLE_ENTITY_RELATION + ";"
-            +  mxConstants.STYLE_ROUNDED+"=1";
     String styleCallNode = mxConstants.STYLE_FILLCOLOR + "=#00ffff";
 
 
     private mxGraph graph;
     private Object	parent;
 
-    public Grapher(Set<TypeEntity> declaredTypes, Set<Relation> relations){
+    public MethodsGrapher(){
 
-        super("Methods calls");
+        super("Methods internal calls");
 
 
         graph = new mxGraph();
         parent = graph.getDefaultParent();
 
         graph.getModel().beginUpdate();
-        placeTypes(declaredTypes);
+        placeTypes();
 
-        placeRelations(relations);
+//        placeRelations(relations);
 //        for (TypeEntity te : declaredTypes){
 //
 //            Object node = graph.insertVertex(parent, null, te.toString(), new Random().nextInt(DEFAULT_WINDOW_WIDTH), new Random().nextInt(DEFAULT_WINDOW_HEIGHT), minWidth(te), DEFAULT_HEIGHT);
@@ -90,10 +87,11 @@ public class Grapher extends JFrame {
 //
 //        }
 
-        endInit();
+//        endInit(); // TODO
 
     }
 
+    @SuppressWarnings("Duplicates")
     private void placeRelations(Set<Relation> relations) {
 
 
@@ -148,39 +146,23 @@ public class Grapher extends JFrame {
 
 
 
-    private void placeTypes(Set<TypeEntity> declaredTypes) {
+    private void placeTypes() {
 
-        int totalWidth = NODE_PADDING * (declaredTypes.size() + 1) + 400;
-        int y = (GRAPH_HEIGHT - LINE_HEIGHT) / 2;
-        int x = NODE_PADDING;
+        int typesCount = 0;
+        for (TypeEntity te : TypeEntity.getDeclaredTypes()){
+            System.out.println("Reading declared type " + te);
+            typesCount++;
 
-        for (TypeEntity te : declaredTypes){
-            totalWidth += getNodeWidth(te);
-        }
-
-        GRAPH_WIDTH = totalWidth;
-
-        for (TypeEntity te : declaredTypes){
-            int lines = 2;
-            int width = getNodeWidth(te);
-
-
-            Set<MethodEntity> internalMethods = te.getMethods() ;
-
-            String label = te.toString() + "\n[ " + te.getLinesCount() + " lines]\n";
-            for (MethodEntity method : internalMethods){
-                lines++;
-                label += method + "\n";
+            for (MethodEntity me : te.getMethods()){
+                System.out.println("\t found method " + me);
+                for (MethodEntity invocation : me.calledMethods){
+                    System.out.println("\t\t calls method " + invocation);
+                }
             }
-
-            nodesAxis.put(te.toString(), x + width / 2);
-
-            Object node = graph.insertVertex(parent, null, label, x, y, width, LINE_HEIGHT * lines, styleCallNode);
-            typesNodes.put(te.toString(), node);
-
-
-            x += width + NODE_PADDING;
         }
+
+
+
 
 
 
