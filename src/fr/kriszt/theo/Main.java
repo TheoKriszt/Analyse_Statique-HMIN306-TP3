@@ -1,85 +1,60 @@
 package fr.kriszt.theo;
 
+import fr.kriszt.theo.GraphX.Grapher;
+import fr.kriszt.theo.GraphX.MethodsGrapher;
 import fr.kriszt.theo.NodeEntities.ApplicationEntity;
-import fr.kriszt.theo.NodeEntities.MethodInvocationEntity;
-import fr.kriszt.theo.visitors.SourceCodeVisitor;
-import org.eclipse.jdt.core.JavaCore;
+import fr.kriszt.theo.NodeEntities.TypeEntity;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
-import org.eclipse.jdt.internal.core.JavaProject;
 
 import java.io.*;
-import java.util.Map;
+import java.util.List;
 
 public class Main {
 
-    public static final String DEFAULT_SOURCE_PATH = "lib/sourceProject";
-//    public static final String DEFAULT_SOURCE_PATH = "/auto_home/tkriszt/IdeaProjects/Evolution_restructuration/AnalyseStatique/lib/sourceProject/";
-//    public static final String DEFAULT_SOURCE_PATH = "/auto_home/tkriszt/workspace/Resolution/";
-//    public static final String DEFAULT_SOURCE_PATH = "lib/sourceProjet/";
-    public static final String PARSEABLE_EXTENSION = "java";
-    private static final ASTParser parser = ASTParser.newParser(AST.JLS10);
-    private static CompilationUnit cu ;
-    private static SourceCodeVisitor visitor;
+//    private static final String DEFAULT_SOURCE_PATH = "lib/SimpleSample";
+    private static final String DEFAULT_SOURCE_PATH = "../SimpleSample/src";
+    private static final String PARSEABLE_EXTENSION = "java";
+    private static ASTParser parser;
 
-    public static void createParser(String path){
+    private static void initParser(String path) {
+
+        parser = ASTParser.newParser(AST.JLS10);
+        parser.setResolveBindings(true);
+        parser.setBindingsRecovery(true);
+        parser.setStatementsRecovery(true);
+        parser.setKind(ASTParser.K_COMPILATION_UNIT);
+        parser.setUnitName("parserUnit");
+
+
+        parser.setEnvironment(
+                new String[]{new File(path).getAbsolutePath()},
+                new String[]{new File(path).getAbsolutePath()},
+                new String[]{ "UTF-8" },
+                true);
 
     }
 
-    public static void parse(File f, ApplicationEntity application) throws IOException {
+    @SuppressWarnings("Duplicates")
+    private static void parse(File f, ApplicationEntity application) throws IOException {
         String str = readFileToString(f.getAbsolutePath());
         parser.setSource(str.toCharArray());
-        parser.setKind(ASTParser.K_COMPILATION_UNIT);
-//        parser.setEnvironment(null, null, null, true);
 
-        System.out.println("DEFAULT SOURCE : " + DEFAULT_SOURCE_PATH);
-        System.out.println("current source : " + f.toString());
+        CompilationUnit cu = (CompilationUnit) parser.createAST(null);
 
-        Map<String, String> options = JavaCore.getOptions();
-        options.put(JavaCore.COMPILER_COMPLIANCE, JavaCore.VERSION_1_6);
-        options.put(JavaCore.COMPILER_CODEGEN_TARGET_PLATFORM, JavaCore.VERSION_1_6);
-        options.put(JavaCore.COMPILER_SOURCE, JavaCore.VERSION_1_6);
-        parser.setCompilerOptions(options);
-        parser.setEnvironment(null, new String[]{f.toString()}, null, false);
-        parser.setUnitName("C1.java");
-        parser.setResolveBindings(true);
-        parser.setBindingsRecovery(true);
-
-        cu = (CompilationUnit) parser.createAST(null);
-
-//        if (cu.getAST().hasBindingsRecovery()){
-//            System.out.println("Binding recovery activated");
-//        }else {
-//            System.out.println("Binding recovery is not activated.");
-//        }
-//
-//        if (cu.getAST().hasResolvedBindings()){
-//            System.out.println("Binding activated");
-//        }else {
-//            System.out.println("Binding is not activated.");
-//        }
-
-        visitor = new SourceCodeVisitor(cu, str, application);
-
-//        System.err.println(linesNumber + " lines found");
-
-//        visitor.setApplication(application);
+        SourceCodeVisitor visitor = new SourceCodeVisitor(str, application);
         cu.accept(visitor);
-
-//        System.err.println(visitor);
-
     }
 
     //read file content into a string
-    public static String readFileToString(String filePath) throws IOException {
+    private static String readFileToString(String filePath) throws IOException {
         StringBuilder fileData = new StringBuilder(1024);
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
 
         char[] buf = new char[10];
-        int numRead = 0;
+        int numRead;
         while ((numRead = reader.read(buf)) != -1) {
-//            System.out.println(numRead);
             String readData = String.valueOf(buf, 0, numRead);
             fileData.append(readData);
             buf = new char[1024];
@@ -92,31 +67,23 @@ public class Main {
 
     /**
      * Recursively explore and parse files with PARSEABLE_EXTENSION extension
-     * @param path
-     * @param application
-     * @throws IOException
      */
-    public static void readDirectory(String path, ApplicationEntity application) throws IOException{
+    private static void readDirectory(String path, ApplicationEntity application) throws IOException{
 
         File dirs = new File(path);
 
         File root = new File(dirs.getCanonicalPath());
-
 
         File[] files = root.listFiles ( );
 
         if (files == null){
             throw new FileNotFoundException("Le dossier spécifié suivant n'existe pas : " + path);
         }
-
-
             for (File f : files ) {
                 if (f.isDirectory()){
                     readDirectory(f.getCanonicalPath(), application);
                 } else if(f.isFile() && f.getName().endsWith(PARSEABLE_EXTENSION)){
-//                    System.err.println("parsing file " + f.getName());
-                    parse(f, application);
-//                    return;
+                    application.addSourceFile( f );
                 }
             }
 
@@ -130,13 +97,33 @@ public class Main {
 
         ApplicationEntity application = new ApplicationEntity("Application");
         readDirectory(path, application);
+        List<File> srcFiles = application.getSrcFiles();
+
+        for (File f : srcFiles){
+            System.out.println("Reading " + f);
+            System.out.println("-----------------------------------------");
+            initParser(path);
+            parse(f, application);
+            System.out.flush();
+            System.err.flush();
+        }
+
+        Relation.filterOutsideRelations();
+
+        application.printResume( 5 );
+
+        System.out.println("Couplage des classes : ");
+        for (Relation r : Relation.getAllRelations()){
+            System.out.println(r);
+        }
+
+//        new Grapher(TypeEntity.getDeclaredTypes(), Relation.getAllRelations());
+        new MethodsGrapher();
 
 
-
-//        application.printResume( 5 );
-
-        MethodInvocationEntity.bind(application);
 
 
     }
+
+
 }

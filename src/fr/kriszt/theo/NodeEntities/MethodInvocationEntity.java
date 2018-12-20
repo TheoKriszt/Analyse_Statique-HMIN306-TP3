@@ -1,7 +1,6 @@
 package fr.kriszt.theo.NodeEntities;
 
 import org.eclipse.jdt.core.dom.*;
-import org.eclipse.jdt.internal.compiler.batch.ModuleFinder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,10 +20,8 @@ public class MethodInvocationEntity extends NodeEntity {
         this.callingMethod = methodDeclaration;
         this.callingClass = currentType;
 
-//        System.out.println("Method Invocation Entity : " + this);
-//        System.out.println("\t Method Invocation : " + methodInvocation);
-
         invocations.add(this);
+        System.out.println("===> MIE :: " + this);
     }
 
 
@@ -35,8 +32,8 @@ public class MethodInvocationEntity extends NodeEntity {
 
         for (MethodInvocationEntity mie : invocations){
             if (! mie.bindClass(classes)){
-                System.err.println("Impossible de binder ");
-                return false;
+                System.err.println("Impossible de binder " + mie);
+//                return false;
             }
         }
 
@@ -50,6 +47,9 @@ public class MethodInvocationEntity extends NodeEntity {
 
         IMethodBinding methodBinding = methodInvocation.resolveMethodBinding();
         System.out.println("methodBinding : " + methodBinding);
+
+        System.out.flush();
+
         int isStatic  = Modifier.STATIC & methodBinding.getModifiers();
         if (isStatic > 0) {
             // method is static method
@@ -58,40 +58,15 @@ public class MethodInvocationEntity extends NodeEntity {
         }
 
 //        System.out.println("Methode interne appellante : " + callingMethod.getName());
-//        System.out.println("Recherche de la méthode " + signature() + " dans " );
+        System.out.println("Recherche de la méthode " + signature() + " dans " );
         for (MethodEntity me : callingClass.getMethods()){
-
-//            System.out.println("Méthode " + me);
-
-
-            /*
             if (me.toString().equals(signature())){
+                System.out.println("\tInscription de l'invocation de " + signature() + " à " + methodInvocation.getExpression());
                 Expression expression = methodInvocation.getExpression();
-//                System.out.println("\tInscription que " + signature() + " invoque " + methodInvocation);
-//                System.out.println("\tExpression : " + expression + " --> objet ou classe appellante");
-
-//                System.out.println("Method Invocation: " + methodInvocation.getName());
-
-                ITypeBinding binding = expression.resolveTypeBinding();
-                System.out.println("Method binding : " + methodInvocation.resolveMethodBinding());
-                System.out.println("Method type binding : " + methodInvocation.resolveTypeBinding());
-
-                if ( binding != null) {
-                    System.out.println("TODO : binding trouvé sur " + binding);
-//                    System.out.println(binding.getDeclaringClass());
-                    me.addInvocation(this);
-                } else {
-                    System.err.println("Pas de binding pour " + methodInvocation);
-                }
-
-                System.out.flush();
-                System.err.flush();
-
-
+                System.out.println(expression.resolveTypeBinding().getDeclaringClass());
+                me.addInvocation( this );
                 return true;
             }
-            /**/
-            return true;
         }
 //        if (callingClass.methods.contains()){
 //
@@ -109,7 +84,7 @@ public class MethodInvocationEntity extends NodeEntity {
 
     }
 
-    public String signature(){
+    private String signature(){
         String returnType;
         if (callingMethod.isConstructor()){
             returnType = callingClass.name;

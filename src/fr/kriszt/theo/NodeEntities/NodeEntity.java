@@ -8,9 +8,9 @@ public class NodeEntity {
         return name;
     }
 
-    protected String name;
+    String name;
 
-    public NodeEntity(String n){
+    NodeEntity(String n){
         name = n;
     }
 
@@ -19,6 +19,16 @@ public class NodeEntity {
     @Override
     public String toString(){
         return name;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if (!(o instanceof NodeEntity)){
+            return false;
+        }
+        NodeEntity node = (NodeEntity) o;
+
+        return this.getClass().equals(o.getClass()) && node.getName().equals(this.getName());
     }
 
 

@@ -1,10 +1,12 @@
 package fr.kriszt.theo.NodeEntities;
 
+import java.io.File;
 import java.util.*;
 
 public class ApplicationEntity extends NodeEntity {
 
     private ArrayList<PackageEntity> packages = new ArrayList<>();
+    private List<File> srcFiles = new ArrayList<>();
     private int totalLines = 0;
     private int nonBlankLines = 0;
 
@@ -16,13 +18,21 @@ public class ApplicationEntity extends NodeEntity {
         packages.add(packageEntity);
     }
 
+    public void addSourceFile(File srcPath){
+        srcFiles.add(srcPath);
+    }
+
+    public List<File> getSrcFiles(){
+        return srcFiles;
+    }
+
     public void printResume(int minMethods) {
         String res = ""
                 + " 1. Nombre de classes dans l'application : " + countClasses() + "\n"
                 + " 2. Nombre de lignes de code dans l'application : " + totalLines + ", dont " + nonBlankLines + " non vides\n"
                 + " 3. Nombre total de méthodes de l'application : " + countApplicationMethods() + "\n"
                 + " 4. Nombre total de packages dans l'application : " + packages.size() + "\n"
-                + " 5. Nombre moyen de méthodes par classe : " + getAverageMethodsPerClass() + "\n"
+                + " 5. Nombre moyen de méthodes par classe : " + String.format("%.2f", getAverageMethodsPerClass()) + "\n"
                 + " 6. Nombre moyen de lignes de codes par méthode : " + "\n"
                 + " 7. Nombre moyen d'attributs par classe : " + getAverageAttributesPerClass() + "\n"
                 + " 8. Les 10% des classes qui possèdent le plus grand nombre de méthodes : " + top10Methods() + "\n"
@@ -71,7 +81,7 @@ public class ApplicationEntity extends NodeEntity {
         nonBlankLines += countLines;
     }
 
-    public List<ClassEntity> getClasses(){
+    List<ClassEntity> getClasses(){
         List<ClassEntity> classes = new ArrayList<>();
 
         for (PackageEntity myPackage : packages){
@@ -95,9 +105,7 @@ public class ApplicationEntity extends NodeEntity {
             avg += c.getMethods().size();
         }
 
-
         avg /= (float) countClasses();
-//        System.err.println("avg methods : " + avg);
         return avg;
     }
 
@@ -107,11 +115,11 @@ public class ApplicationEntity extends NodeEntity {
         for (ClassEntity c : getClasses()){
             avg += c.attributes.size();
         }
-//        System.out.println("sum attr : " + avg);
         avg /= (float) countClasses();
         return avg;
     }
 
+    @SuppressWarnings("Duplicates")
     private List<ClassEntity> getClassTopTier(List<ClassEntity> classes){
         ArrayList<ClassEntity> top = new ArrayList<>();
         if (!classes.isEmpty()) {
@@ -125,6 +133,7 @@ public class ApplicationEntity extends NodeEntity {
         return top;
     }
 
+    @SuppressWarnings("Duplicates")
     private List<MethodEntity> getMethodTopTier(List<MethodEntity> classes){
         ArrayList<MethodEntity> top = new ArrayList<>();
         if (!classes.isEmpty()) {
@@ -160,27 +169,15 @@ public class ApplicationEntity extends NodeEntity {
         List<MethodEntity> methods = new ArrayList<>();
 
         for ( ClassEntity ce : classes ){
-            List<MethodEntity> subMethods = ce.getMethods();
-            subMethods.sort((o1, o2) -> o1.countLines > o2.countLines ? -1 : 1);
-            methods.addAll(getMethodTopTier(subMethods));
+            Set<MethodEntity> subMethods = ce.getMethods();
+            List<MethodEntity> methodsList = new ArrayList<>(subMethods);
+            methodsList.sort((o1, o2) -> {
+                if (o1.countLines == o2.countLines) return 0;
+                return o1.countLines > o2.countLines ? -1 : 1;
+            });
+            methods.addAll(getMethodTopTier(methodsList));
         }
 
-
-//        List<MethodEntity> methods = getMethods();
-////        methods.sort((o1, o2) -> o1.countLines > o2.countLines ? -1 : 1);
-//        System.err.println("tri d'une liste de taille " + methods.size());
-//        methods.sort((o1, o2) -> {
-////            System.err.println("Comparaison de " + o1 + " et " + o2);
-//
-////            if (o1 == (o2)) return 0;
-//            if (o1.equals(o2)) return 0;
-//            return o1.countLines > o2.countLines ? -1 : 1;
-//
-//        });
-
-//        for( MethodEntity m : methods ){
-//            System.err.println(m + " : " + m.countLines);
-//        }
 
         return methods;
 

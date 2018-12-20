@@ -6,22 +6,19 @@ import java.util.*;
 
 public class MethodEntity  extends NodeEntity{
 
-    public ArrayList<String> params = new ArrayList<>();
+    ArrayList<String> params = new ArrayList<>();
     private MethodDeclaration methodDeclaration = null;
-    private TypeEntity typeEntity = null;
-    public int countLines = 0;
+    private TypeEntity typeEntity;
+    int countLines = 0;
 
     public HashSet<MethodEntity> calledMethods = new HashSet<>();
     private String returnType = "void";
     private HashMap<MethodInvocationEntity, Integer> invocations = new HashMap<>();
 
 
-    public MethodEntity(String toString, TypeEntity currentType) {
+    private MethodEntity(String toString, TypeEntity currentType) {
         super(toString);
         this.typeEntity = currentType;
-//        System.out.println("Methode " + this);
-
-
     }
 
     public MethodEntity(String toString, MethodDeclaration m, TypeEntity currentType) {
@@ -52,7 +49,7 @@ public class MethodEntity  extends NodeEntity{
         return returnType + " "  + typeEntity + "." +  super.toString() + "(" + getParams() + ")";
     }
 
-    public String getParams() {
+    private String getParams() {
         if (methodDeclaration == null) return "";
 //        System.out.println("Params : " + methodDeclaration.parameters().toString().replace("\\[|]", ""));
         return methodDeclaration.parameters().toString().replaceAll("\\[|]", "");
