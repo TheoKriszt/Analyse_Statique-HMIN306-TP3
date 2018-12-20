@@ -154,14 +154,14 @@ public class MethodsGrapher extends JFrame {
             if (!displayedMethods.contains( calling ) && declaredTypesNames.contains(mr.getCallingType())){
                 displayedMethods.add(calling);
                 System.out.println("Inserting " + mr);
-                methodsNodes.put(calling, graph.insertVertex(callingClassNode, null, calling, calling.length() * LETTER_WIDTH, LINE_HEIGHT, 100, 200));
+                methodsNodes.put(calling, graph.insertVertex(callingClassNode, null, calling, new Random().nextInt(200), new Random().nextInt(200), getNodeWidth(calling), LINE_HEIGHT));
 
             }
 
             if (!displayedMethods.contains( called ) && declaredTypesNames.contains(mr.getCalledType())){
                 displayedMethods.add(called);
                 System.out.println("Inserting " + mr);
-                methodsNodes.put(called, graph.insertVertex(calledClassNode, null, called, (called.length() * LETTER_WIDTH), LINE_HEIGHT, 100, 200));
+                methodsNodes.put(called, graph.insertVertex(calledClassNode, null, called, (called.length() * LETTER_WIDTH), LINE_HEIGHT, getNodeWidth(called), LINE_HEIGHT));
             }
 
         }
@@ -189,6 +189,10 @@ public class MethodsGrapher extends JFrame {
 
 
 
+    }
+
+    private double getNodeWidth(String called) {
+        return LETTER_WIDTH * called.length();
     }
 
     private int getNodeWidth(TypeEntity te) {

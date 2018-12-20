@@ -8,7 +8,7 @@ public class Person {
 
     private final String name;
 
-    private HashSet<com.company.Car> myCars = new HashSet<>();
+    private HashSet<Car> myCars = new HashSet<>();
 
     public Person(String name){
         this.name = name;
@@ -19,7 +19,7 @@ public class Person {
         return allPersons;
     }
 
-    public void adddCar(com.company.Car c){
+    public void adddCar(Car c){
         myCars.add(c);
         c.setOwner(this);
     }
@@ -27,7 +27,7 @@ public class Person {
     @Override
     public String toString(){
         String ret = name + " : \n";
-        for (com.company.Car c : myCars){
+        for (Car c : myCars){
             ret += "\t" + c + "\n";
         }
 
@@ -38,11 +38,11 @@ public class Person {
         return name;
     }
 
-    public void addCar(com.company.Car car) {
+    public void addCar(Car car) {
         myCars.add(car);
     }
 
-    public void removeCar(com.company.Car car) {
+    public void removeCar(Car car) {
         myCars.remove(car);
     }
 }
