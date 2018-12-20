@@ -56,7 +56,7 @@ public class MethodEntity  extends NodeEntity{
 
     }
 
-    void addInvocation(MethodInvocationEntity methodInvocationEntity) {
+    public void addInvocation(MethodInvocationEntity methodInvocationEntity) {
         if ( ! invocations.containsKey(methodInvocationEntity) ){
             invocations.put(methodInvocationEntity, 0);
         }else {

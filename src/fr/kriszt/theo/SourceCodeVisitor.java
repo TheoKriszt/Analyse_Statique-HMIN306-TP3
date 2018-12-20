@@ -3,6 +3,8 @@ package fr.kriszt.theo;
 import fr.kriszt.theo.NodeEntities.*;
 import org.eclipse.jdt.core.dom.*;
 
+import java.util.ArrayList;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,7 +17,7 @@ public class SourceCodeVisitor extends ASTVisitor{
 
     private PackageEntity currentPackage;
     private TypeEntity currentType;
-
+    private MethodEntity currentMethod;
 
 
     SourceCodeVisitor(String source, ApplicationEntity application){
@@ -38,6 +40,7 @@ public class SourceCodeVisitor extends ASTVisitor{
     public boolean visit(TypeDeclaration node) {
 
         String typeName = currentPackage.getName() + "." + node.getName().toString();
+        System.out.println("Visiting type " + typeName);
 
 
         if (node.isInterface()) {
@@ -86,8 +89,42 @@ public class SourceCodeVisitor extends ASTVisitor{
         return true;
     }
 
+    @Override
+    public boolean visit(MethodDeclaration methodDeclaration) {
+        ArrayList<MethodEntity> methods = new ArrayList<>(currentType.getMethods());
+        currentMethod = null;
+
+        MethodEntity methodEntity = new MethodEntity(methodDeclaration.getName().toString(), methodDeclaration, currentType);
+        methodEntity.addParams(methodDeclaration.parameters());
+
+        String returnType = "void";
+        if (methodDeclaration.isConstructor()){
+            returnType = methodDeclaration.getName().toString();
+        }else if ( methodDeclaration.getReturnType2() != null){
+            returnType = methodDeclaration.getReturnType2().toString();
+        }
+
+        methodEntity.setReturnType(returnType);
+
+//        System.out.println("\t trying to fing method called " + methodEntity);
+
+        for ( MethodEntity me : methods ){
+//            System.out.println("\t\t comparing with " + me);
+            if (me.toString().equals(methodEntity.toString())){
+                currentMethod = me;
+                break;
+
+            }
+        }
+        return true;
+    }
+
     public boolean visit(MethodInvocation methodInvocation) {
+        System.out.println("-----------------------------------");
         System.out.println("Method invocation : " + methodInvocation);
+        System.out.println("Current class : " + currentType);
+        System.out.println("Current method : " + currentMethod);
+
 
         Expression expression = methodInvocation.getExpression();
 
@@ -108,11 +145,12 @@ public class SourceCodeVisitor extends ASTVisitor{
 
         if (typeBinding != null) {
             System.out.println("Appel : " + currentType + " ==> " + typeBinding.getQualifiedName());
-
-
-
+            System.out.println("La méthode " + currentMethod + " appelle la methode " + methodBinding);
             Relation rel = Relation.addRelation(currentType.toString(), typeBinding.getQualifiedName());
             rel.addMethod(methodBinding.toString(), currentType.toString());
+
+            MethodRelation methodRelation = MethodRelation.addMethodRelation(currentMethod.toString(), currentType.toString(), methodBinding.toString(), typeBinding.getQualifiedName());
+
 
         }
 

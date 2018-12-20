@@ -58,8 +58,8 @@ public class Grapher extends JFrame {
 //        }
 
 //        for (Relation r : relations){
-//            Object source = typesNodes.get(r.getInputType());
-//            Object dest = typesNodes.get(r.getOutputType());
+//            Object source = typesNodes.get(r.getCallingMethod());
+//            Object dest = typesNodes.get(r.getCalledMethod());
 //
 //
 //            int width = 0;
