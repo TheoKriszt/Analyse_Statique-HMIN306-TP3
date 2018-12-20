@@ -10,5 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="AST" level="project" />
     <orderEntry type="library" name="jgraphx" level="project" />
+    <orderEntry type="library" name="ast" level="project" />
+    <orderEntry type="library" name="spoon-core-6.2.0-jar-with-dependencies" level="project" />
   </component>
 </module>

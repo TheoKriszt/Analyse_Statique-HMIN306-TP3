@@ -1,9 +1,7 @@
 package fr.kriszt.theo;
 
-import fr.kriszt.theo.GraphX.Grapher;
 import fr.kriszt.theo.GraphX.MethodsGrapher;
 import fr.kriszt.theo.NodeEntities.ApplicationEntity;
-import fr.kriszt.theo.NodeEntities.TypeEntity;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
@@ -13,8 +11,8 @@ import java.util.List;
 
 public class Main {
 
-//    private static final String DEFAULT_SOURCE_PATH = "lib/SimpleSample";
-    private static final String DEFAULT_SOURCE_PATH = "../SimpleSample/src";
+    public static final String DEFAULT_SOURCE_PATH = "lib/SimpleSample/company/src";
+//    private static final String DEFAULT_SOURCE_PATH = "../SimpleSample/src";
     private static final String PARSEABLE_EXTENSION = "java";
     private static ASTParser parser;
 
