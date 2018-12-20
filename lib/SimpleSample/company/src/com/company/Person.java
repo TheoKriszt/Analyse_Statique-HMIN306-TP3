@@ -1,5 +1,6 @@
 package com.company;
 
+import java.io.IOException;
 import java.util.HashSet;
 
 public class Person {
@@ -20,8 +21,13 @@ public class Person {
     }
 
     public void adddCar(Car c){
-        myCars.add(c);
-        c.setOwner(this);
+        try {
+            myCars.add(c);
+            c.setOwner(this);
+        }catch (Exception e ){
+//            System.err.println("This try-catch should be useless");
+        }
+
     }
 
     @Override

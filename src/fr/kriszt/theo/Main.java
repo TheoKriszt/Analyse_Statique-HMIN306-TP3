@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Main {
 
-    private static final String DEFAULT_SOURCE_PATH = "lib/SimpleSample/company/src";
+    public static final String DEFAULT_SOURCE_PATH = "lib/SimpleSample/company/src";
 //    private static final String DEFAULT_SOURCE_PATH = "../SimpleSample/src";
     private static final String PARSEABLE_EXTENSION = "java";
     private static ASTParser parser;
