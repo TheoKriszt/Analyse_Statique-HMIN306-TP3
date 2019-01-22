@@ -1,7 +1,9 @@
 package fr.kriszt.theo;
 
+import fr.kriszt.theo.GraphX.Grapher;
 import fr.kriszt.theo.GraphX.MethodsGrapher;
 import fr.kriszt.theo.NodeEntities.ApplicationEntity;
+import fr.kriszt.theo.NodeEntities.TypeEntity;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
@@ -115,11 +117,8 @@ public class Main {
             System.out.println(r);
         }
 
-//        new Grapher(TypeEntity.getDeclaredTypes(), Relation.getAllRelations());
+        new Grapher(TypeEntity.getDeclaredTypes(), Relation.getAllRelations());
         new MethodsGrapher();
-
-
-
 
     }
 

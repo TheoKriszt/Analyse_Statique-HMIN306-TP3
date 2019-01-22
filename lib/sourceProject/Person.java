@@ -1,8 +1,10 @@
-package fr.kriszt.theo;
+package sourceProject;
 
 import java.util.HashSet;
 
 public class Person {
+
+    private String  name;
 
     public static HashSet<Person> allPersons = new HashSet<>();
 
@@ -20,5 +22,18 @@ public class Person {
     public static Set<Person> getAllPersons(){
         return allPersons;
 
+    }
+
+    public void addOwnedCar(Car c){
+        ownedCars.add(c);
+    }
+
+    @Override
+    public String toString(){
+        return name + " has "+ownedCars.size() + " cars";
+    }
+
+    public String getName(){
+        return name;
     }
 }

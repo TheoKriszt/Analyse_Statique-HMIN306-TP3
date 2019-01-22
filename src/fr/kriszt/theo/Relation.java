@@ -21,6 +21,17 @@ public class Relation {
         count = 1;
     }
 
+    public static boolean typeHasRelations(TypeEntity te) {
+
+        for (Relation r : allRelations){
+            if (te.toString().equals(r.inputType) || te.toString().equals(r.outputType)){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public void addMethod(String mn, String callingType){
         if (callingType.equals(inputType)){
             inmethodsNames.add(mn);
@@ -66,9 +77,12 @@ public class Relation {
         Set<Relation> internalRelations = new HashSet<>();
 
         for (Relation r : allRelations){
-            for (TypeEntity te : declaredTypes){
-                if (te.toString().equals(r.outputType)){
-                    internalRelations.add(r);
+            if (! r.inputType.equals(r.outputType)) {
+                for (TypeEntity te : declaredTypes){
+
+                    if (te.toString().equals(r.outputType)){
+                        internalRelations.add(r);
+                    }
                 }
             }
         }

@@ -149,8 +149,11 @@ public class SourceCodeVisitor extends ASTVisitor{
             Relation rel = Relation.addRelation(currentType.toString(), typeBinding.getQualifiedName());
             rel.addMethod(methodBinding.toString(), currentType.toString());
 
-            MethodRelation methodRelation = MethodRelation.addMethodRelation(currentMethod.toString(), currentType.toString(), methodBinding.toString(), typeBinding.getQualifiedName());
-
+            MethodRelation methodRelation = MethodRelation.addMethodRelation(
+                    currentMethod.toString(),
+                    currentType.toString(),
+                    methodBinding.toString(),
+                    typeBinding.getQualifiedName());
 
         }
 

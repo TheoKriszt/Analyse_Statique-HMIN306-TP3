@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cdf5c7c-0603-4808-80dd-edcf6916b365" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/spoon-core-6.2.0-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnalyseStatique.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyseStatique.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/ExampleMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject/ExampleMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sourceProject/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/Relation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/Relation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonExample.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,18 +21,57 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2015676093">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.138" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Car.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#countLines#0;class#SourceCodeVisitor#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Grapher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="3774">
+              <caret line="234" selection-start-line="234" selection-end-line="234" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,34 +80,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="83" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="83" />
+            <state relative-caret-position="155">
+              <caret line="161" column="31" lean-forward="true" selection-start-line="161" selection-start-column="31" selection-end-line="161" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/sourceProject/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonExample.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="176" column="41" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="67">
+              <caret line="92" column="29" lean-forward="true" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/spoon-core-6.2.0-jar-with-dependencies.jar!/spoon/Launcher.class">
+        <entry file="file://$PROJECT_DIR$/lib/sourceProject/ExampleMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="547" column="19" selection-start-line="547" selection-start-column="19" selection-end-line="547" selection-end-column="19" />
+            <state relative-caret-position="-99">
+              <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Relation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,9 +223,9 @@
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/MethodRelation.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" />
         <option value="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonExample.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" />
       </list>
     </option>
   </component>
@@ -182,9 +242,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="width" value="683" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -210,7 +269,7 @@
               <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sourceProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
@@ -228,7 +287,7 @@
               <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="theo" type="462c0819:PsiDirectoryNode" />
-              <item name="spoon" type="462c0819:PsiDirectoryNode" />
+              <item name="GraphX" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,12 +340,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SpoonExample">
+  <component name="RunManager" selected="Application.Self introspection">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="fr.kriszt.theo.Main" />
       <module name="AnalyseStatique" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Self introspection" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="fr.kriszt.theo.Main" />
+      <module name="AnalyseStatique" />
+      <option name="PROGRAM_PARAMETERS" value="./src" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -298,10 +365,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Self introspection" />
+      <item itemvalue="Application.SpoonExample" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SpoonExample" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SpoonExample" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -332,6 +404,7 @@
       <workItem from="1545221819769" duration="1417000" />
       <workItem from="1545254154953" duration="6225000" />
       <workItem from="1545301903856" duration="1563000" />
+      <workItem from="1548154847996" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="wéééééééé... (pls kill me)">
       <created>1542154025877</created>
@@ -372,13 +445,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66794000" />
+    <option name="totallyTimeSpent" value="68674000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29500756" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -386,8 +458,8 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74444443" visible="true" weight="0.36796537" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.74444443" visible="true" weight="0.3666121" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3988889" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,7 +468,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32976446" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25555557" side_tool="true" weight="0.36894274" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4989339" weight="0.32467532" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4989339" weight="0.32405892" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32900432" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -447,6 +519,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wéééééééé... (pls kill me)" />
     <MESSAGE value="Update libs,&#10;Binding types" />
@@ -465,10 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-          <folding>
-            <element signature="e#3515#3516#0" expanded="true" />
-            <element signature="e#3553#3554#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -477,10 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding>
-            <element signature="e#1720#1721#0" expanded="true" />
-            <element signature="e#1747#1748#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,17 +566,6 @@
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/org.eclipse.jdt.core-3.15.0-sources.jar!/org/eclipse/jdt/core/dom/CompilationUnit.java" />
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/InterfaceEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -525,13 +581,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="148" column="13" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/File.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ParamEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -556,13 +606,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_111/src.zip!/java/awt/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="1028" column="16" selection-start-line="1028" selection-start-column="16" selection-end-line="1028" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_111/src.zip!/java/awt/Window.java" />
     <entry file="jar://$PROJECT_DIR$/lib/jgraphx.jar!/com/mxgraph/view/mxGraph.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -581,25 +625,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
-          <folding>
-            <element signature="e#6254#6255#0" expanded="true" />
-            <element signature="e#6291#6292#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Relation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sourceProject/ExampleMain.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="uml://JAVA/fr.kriszt.theo.NodeEntities">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -631,10 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#signature#0;class#MethodInvocationEntity#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -649,25 +672,7 @@
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/ParserHelper.java" />
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/Car.java" />
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/Person.java" />
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5120">
-          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="151" column="68" selection-start-line="151" selection-start-column="68" selection-end-line="151" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#visit#2;class#SourceCodeVisitor#0" />
-            <element signature="method#countLines#0;class#SourceCodeVisitor#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Set.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/MethodRelation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -688,16 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Grapher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -709,10 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2448">
           <caret line="156" column="146" selection-start-line="156" selection-start-column="146" selection-end-line="156" selection-end-column="146" />
-          <folding>
-            <element signature="e#6733#6734#0" expanded="true" />
-            <element signature="e#6786#6787#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,16 +711,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Car.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/AlteredPerson.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/spoon-core-6.2.0-jar-with-dependencies.jar!/spoon/reflect/declaration/CtField.class">
@@ -763,20 +748,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
+    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="83" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="83" />
+        <state relative-caret-position="434">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/AlteredPerson.java" />
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Grapher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3774">
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person.java">
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Relation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -785,11 +785,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="176" column="41" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="41" />
+        <state relative-caret-position="155">
+          <caret line="161" column="31" lean-forward="true" selection-start-line="161" selection-start-column="31" selection-end-line="161" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sourceProject/ExampleMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#countLines#0;class#SourceCodeVisitor#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="92" column="29" lean-forward="true" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -859,7 +884,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>spoon-core-6.2.0-jar-with-dependencies</last-edited>
+          <last-edited>AST</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -168,12 +168,12 @@ public class SpoonExample <T>
 		String outputFile = packagePath + "/AlteredPerson.java";
 
 		Files.deleteIfExists(Paths.get(outputFile));
-		SpoonExample<Void> addAgeField = new SpoonExample<>(packagePath, "com.company.Person");
+		SpoonExample<Void> addAgeField = new SpoonExample<>(packagePath, "com.company.AlteredPerson");
 		
 		addAgeField.addField("age", Integer.class);
 		
 		addAgeField.addMethod("getAge", "return this.age;");
 		
-		addAgeField.createFile(outputFile, "com.company");
+		addAgeField.createFile(outputFile, "com.company.AlteredPerson");
 	}
 }

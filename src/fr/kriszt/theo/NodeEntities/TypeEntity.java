@@ -1,6 +1,6 @@
 package fr.kriszt.theo.NodeEntities;
 
-import org.eclipse.jdt.core.dom.Type;
+import org.eclipse.jdt.core.dom.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
