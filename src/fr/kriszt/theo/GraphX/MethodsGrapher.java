@@ -3,11 +3,11 @@ package fr.kriszt.theo.GraphX;
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.util.mxConstants;
 import com.mxgraph.view.mxGraph;
-import fr.kriszt.theo.MethodRelation;
+import fr.kriszt.theo.relations.MethodRelation;
 import fr.kriszt.theo.NodeEntities.MethodEntity;
 import fr.kriszt.theo.NodeEntities.NodeEntity;
 import fr.kriszt.theo.NodeEntities.TypeEntity;
-import fr.kriszt.theo.Relation;
+import fr.kriszt.theo.relations.Relation;
 
 import javax.swing.*;
 import java.awt.*;
@@ -195,6 +195,7 @@ public class MethodsGrapher extends JFrame {
         return LETTER_WIDTH * called.length();
     }
 
+    @SuppressWarnings("Duplicates")
     private int getNodeWidth(TypeEntity te) {
         int width = te.toString().length();
 
@@ -205,6 +206,7 @@ public class MethodsGrapher extends JFrame {
         return width * LETTER_WIDTH;
     }
 
+    @SuppressWarnings("Duplicates")
     private double getNodeWidth(Set<String> methods) {
         int width = 0;
 
@@ -214,6 +216,7 @@ public class MethodsGrapher extends JFrame {
         return width * LETTER_WIDTH;
     }
 
+    @SuppressWarnings("Duplicates")
     private void endInit(){
 
         graph.setAllowDanglingEdges(false);

@@ -1,4 +1,4 @@
-package fr.kriszt.theo;
+package fr.kriszt.theo.relations;
 
 import java.util.HashSet;
 import java.util.Set;

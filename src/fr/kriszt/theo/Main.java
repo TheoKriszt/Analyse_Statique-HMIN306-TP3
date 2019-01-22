@@ -1,7 +1,8 @@
 package fr.kriszt.theo;
 
-import fr.kriszt.theo.GraphX.MethodsGrapher;
+import fr.kriszt.theo.GraphX.Dendrogram;
 import fr.kriszt.theo.NodeEntities.ApplicationEntity;
+import fr.kriszt.theo.relations.Relation;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
@@ -116,7 +117,23 @@ public class Main {
         }
 
 //        new Grapher(TypeEntity.getDeclaredTypes(), Relation.getAllRelations());
-        new MethodsGrapher();
+//        new MethodsGrapher();
+
+//        boolean testExemplesDendro = true;
+//
+//        if (testExemplesDendro){
+//            new Dendrogram(true, true);
+//            new Dendrogram(true, false);
+//        } else {
+//            new Dendrogram(false, false);
+//        }
+
+//            new Dendrogram(true, true);
+//            new Dendrogram(true, false);
+
+            new Dendrogram(false, false);
+
+
 
 
 

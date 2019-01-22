@@ -1,4 +1,4 @@
-package fr.kriszt.theo;
+package fr.kriszt.theo.relations;
 
 import fr.kriszt.theo.NodeEntities.TypeEntity;
 
@@ -15,10 +15,25 @@ public class Relation {
 
     private static Set<Relation> allRelations = new HashSet<>();
 
-    private Relation( String in, String out ){
-        inputType = in;
-        outputType = out;
+    public Relation( String in, String out ){
+        if (in.compareTo(out) < 0){
+            inputType = in;
+            outputType = out;
+        } else {
+            inputType = out;
+            outputType = in;
+        }
+
         count = 1;
+    }
+
+    public Relation(String a, String b, int i) {
+        this(a, b);
+        count = i;
+    }
+
+    public static void setAllRelations(Set<Relation> aGarder) {
+        allRelations = aGarder;
     }
 
     public void addMethod(String mn, String callingType){
@@ -61,7 +76,7 @@ public class Relation {
         return inputType + " ==> " + outputType + " [" + count + " time" + (count > 1 ? "s" : "") + "]";
     }
 
-    static void filterOutsideRelations() {
+    public static void filterOutsideRelations() {
         Set<TypeEntity> declaredTypes = TypeEntity.getDeclaredTypes();
         Set<Relation> internalRelations = new HashSet<>();
 
@@ -89,11 +104,33 @@ public class Relation {
         return count;
     }
 
+    public void setCount(int c) {
+        count = c;
+    }
+
     public Set<String> getIncomingMethods() {
         return inmethodsNames;
     }
 
     public Set<String> getOutcomingMethods() {
         return outmethodsNames;
+    }
+
+    public void setInType(String next) {
+        this.inputType = next;
+    }
+
+    public void setOutType(String next) {
+        this.outputType = next;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+//        System.err.println("is " + this + " equal to " + o + " ? ");
+        boolean res = o instanceof Relation &&
+                inputType.equals(((Relation) o).inputType) &&
+                outputType.equals(((Relation) o).outputType);
+//        System.err.println(res ? "Yes" : "No");
+        return res;
     }
 }

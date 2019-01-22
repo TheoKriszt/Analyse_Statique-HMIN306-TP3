@@ -4,15 +4,13 @@ import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.util.mxConstants;
 import com.mxgraph.view.mxGraph;
 import fr.kriszt.theo.NodeEntities.MethodEntity;
-import fr.kriszt.theo.NodeEntities.MethodInvocationEntity;
 import fr.kriszt.theo.NodeEntities.NodeEntity;
 import fr.kriszt.theo.NodeEntities.TypeEntity;
-import fr.kriszt.theo.Relation;
+import fr.kriszt.theo.relations.Relation;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.*;
-import java.util.List;
 
 public class Grapher extends JFrame {
 

@@ -1,10 +1,11 @@
 package fr.kriszt.theo;
 
 import fr.kriszt.theo.NodeEntities.*;
+import fr.kriszt.theo.relations.MethodRelation;
+import fr.kriszt.theo.relations.Relation;
 import org.eclipse.jdt.core.dom.*;
 
 import java.util.ArrayList;
-import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -143,7 +144,7 @@ public class SourceCodeVisitor extends ASTVisitor{
             return true;
         }
 
-        if (typeBinding != null) {
+        if (typeBinding != null && currentMethod != null) {
             System.out.println("Appel : " + currentType + " ==> " + typeBinding.getQualifiedName());
             System.out.println("La méthode " + currentMethod + " appelle la methode " + methodBinding);
             Relation rel = Relation.addRelation(currentType.toString(), typeBinding.getQualifiedName());
