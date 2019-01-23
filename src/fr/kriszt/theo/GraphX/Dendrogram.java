@@ -149,11 +149,14 @@ import java.util.List;
     private void renderLevels(List<DendroLevel> levels) {
 
         Map<ClassCluster, Object> classesToVertices = new HashMap<>();
+        Set<ClassCluster> wantedParents = new HashSet<>();
 
         int x = H_SPAN;
         int y = V_SPAN;
 
         for (DendroLevel dl : levels){
+            int levelNumber = levels.indexOf(dl);
+//            System.out.println("Rendu du level " + levelNumber);
             int levelHeight = 0;
             for (ClassCluster cc : dl.getClusters()){
                 levelHeight = Math.max(levelHeight, cc.getClasses().size());
@@ -162,7 +165,9 @@ import java.util.List;
                     label += s + "\n";
                 }
 
-                if (!classesToVertices.containsKey(cc)) {
+                if (!classesToVertices.containsKey(cc) && (levelNumber == 0 || wantedParents.contains(cc))) {
+//                    System.out.println("\tRendering cluster " + cc);
+                    wantedParents.add(cc.getParent());
                     Object vertex = graph.insertVertex(parent, null, label, x, y, getVertexWidth(label),  getVertexHeight(label));
                     classesToVertices.put(cc, vertex);
                 }

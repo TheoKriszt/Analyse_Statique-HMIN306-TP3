@@ -44,7 +44,19 @@ public class DendroLevel {
             ClassCluster cc1 = ClassCluster.getContainingCluster(inputType, clusters);
             ClassCluster cc2 = ClassCluster.getContainingCluster(outputType, clusters);
 
+
+
             ClassCluster merged = new ClassCluster(cc1, cc2);
+
+            if (merged.getCohesion() == 15){
+                System.err.println("****************************************************");
+                System.err.println("Merging " + cc1);
+                System.err.println("   With " + cc2);
+                System.err.println();
+                System.err.println("  Makes " + merged);
+                System.err.println("****************************************************");
+            }
+
 
             Set<ClassCluster> parentClusters = new HashSet<>();
             parentClusters.add(merged);

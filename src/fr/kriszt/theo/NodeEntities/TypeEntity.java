@@ -1,7 +1,5 @@
 package fr.kriszt.theo.NodeEntities;
 
-import org.eclipse.jdt.core.dom.Type;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +9,6 @@ public abstract class TypeEntity extends NodeEntity {
     private static HashSet<TypeEntity> declaredTypes = new HashSet<>();
 
     HashSet<MethodEntity> methods = new HashSet<>();
-    private String superType = null;
     ArrayList<String> attributes = new ArrayList<>();
     private int linesCount = -1;
 
@@ -25,18 +22,12 @@ public abstract class TypeEntity extends NodeEntity {
     }
 
     public void addMethod(MethodEntity m){
+//        System.err.println("Add method " + m);
         methods.add(m);
     }
 
     public HashSet<MethodEntity> getMethods() {
-        return (HashSet<MethodEntity>) methods;
-    }
-
-    public void setSuperType(Type superclassType) {
-        if (superclassType != null){
-            superType = superclassType.getNodeType() + "";
-        }
-
+        return methods;
     }
 
     public void addAttribute(String attr){

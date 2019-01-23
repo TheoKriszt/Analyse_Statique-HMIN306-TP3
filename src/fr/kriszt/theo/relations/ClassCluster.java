@@ -16,13 +16,13 @@ public class ClassCluster {
         return parent;
     }
 
-    public ClassCluster makeParent(){
-        ClassCluster p = new ClassCluster(this.classes);
-        p.cohesion = this.cohesion;
-        this.parent = p;
-
-        return p;
-    }
+//    public ClassCluster makeParent(){
+//        ClassCluster p = new ClassCluster(this.classes);
+//        p.cohesion = this.cohesion;
+//        this.parent = p;
+//
+//        return p;
+//    }
 
 
 
@@ -80,12 +80,12 @@ public class ClassCluster {
                     if (!cc.contains(in) && !out.equals(first)){
 //                        System.out.print(r + " corrigé en ");
                         r.setOutType(first);
-                        System.out.println(r+"\n");
+//                        System.out.println(r+"\n");
 
                     } else if (!cc.contains(out) && !in.equals(first)){
 //                        System.out.print(r + " corrigé en ");
                         r.setInType(first);
-                        System.out.println(r+"\n");
+//                        System.out.println(r+"\n");
                     }
                 }
             }
@@ -105,6 +105,7 @@ public class ClassCluster {
 
         for (String k : relationsCounts.keySet()){
             String[] tokens = k.split(" ==> ");
+            if (!tokens[0].equals(tokens[1]))
             relationsARefactorer.add(new Relation(tokens[0], tokens[1], relationsCounts.get(k)));
         }
 

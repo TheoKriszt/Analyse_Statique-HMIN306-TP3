@@ -112,6 +112,8 @@ public class Main {
 
         Relation.filterOutsideRelations();
 
+        System.out.println("\n==============================================================\n");
+
         application.printResume( 5 );
 
 //        System.out.println("Couplage des classes : ");
@@ -119,28 +121,16 @@ public class Main {
 //            System.out.println(r);
 //        }
 
-//        new Grapher(TypeEntity.getDeclaredTypes(), Relation.getAllRelations());
+        new Grapher(TypeEntity.getDeclaredTypes(), Relation.getAllRelations());
         new MethodsGrapher();
 
-//        boolean testExemplesDendro = true;
 //
 //        if (testExemplesDendro){
-//            new Dendrogram(true, true);
-//            new Dendrogram(true, false);
+//            new Dendrogram(true, true); // test arbre complet
+//            new Dendrogram(true, false); //test arbres partiels
 //        } else {
-//            new Dendrogram(false, false);
+            new Dendrogram(false, false); // réel
 //        }
-
-//            new Dendrogram(true, true);
-//            new Dendrogram(true, false);
-
-//            new Dendrogram(false, false);
-
-
-
-
-
-
     }
 
 

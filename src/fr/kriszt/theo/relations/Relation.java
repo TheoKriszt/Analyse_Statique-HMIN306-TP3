@@ -9,8 +9,8 @@ public class Relation {
 
     private String inputType;
     private String outputType;
-    private Set<String> inmethodsNames = new HashSet<>();
-    private Set<String> outmethodsNames = new HashSet<>();
+    private Set<String> inMethodsNames = new HashSet<>();
+    private Set<String> outMethodsNames = new HashSet<>();
     private int count;
 
     private static Set<Relation> allRelations = new HashSet<>();
@@ -38,8 +38,8 @@ public class Relation {
 
     public void addMethod(String mn, String callingType){
         if (callingType.equals(inputType)){
-            inmethodsNames.add(mn);
-        }else outmethodsNames.add(mn);
+            inMethodsNames.add(mn);
+        }else outMethodsNames.add(mn);
     }
 
     public static Relation addRelation(String type1, String type2 ){
@@ -100,27 +100,31 @@ public class Relation {
         return outputType;
     }
 
-    public int getCount() {
+    int getCount() {
         return count;
     }
 
-    public void setCount(int c) {
-        count = c;
-    }
+//    public void setCount(int c) {
+//        count = c;
+//    }
 
     public Set<String> getIncomingMethods() {
-        return inmethodsNames;
+        return inMethodsNames;
     }
 
     public Set<String> getOutcomingMethods() {
-        return outmethodsNames;
+        return outMethodsNames;
     }
 
-    public void setInType(String next) {
+    void setInType(String next) {
+        if (outputType.equals(next))
+            throw new IllegalArgumentException("Reference cyclique");
         this.inputType = next;
     }
 
-    public void setOutType(String next) {
+    void setOutType(String next) {
+        if (inputType.equals(next))
+            throw new IllegalArgumentException("Reference cyclique");
         this.outputType = next;
     }
 

@@ -30,11 +30,11 @@ public class ApplicationEntity extends NodeEntity {
         String res = ""
                 + " 1. Nombre de classes dans l'application : " + countClasses() + "\n"
                 + " 2. Nombre de lignes de code dans l'application : " + totalLines + ", dont " + nonBlankLines + " non vides\n"
-                + " 3. Nombre total de méthodes de l'application : " + countApplicationMethods() + "\n"
-                + " 4. Nombre total de classes dans l'application : " + countPackages(packages) + "\n"
+                + " 3. Nombre total de méthodes de l'application : " + getMethods().size() + "\n" //countApplicationMethods() + "\n"
+                + " 4. Nombre total de packages dans l'application : " + countPackages(packages) + "\n"
                 + " 5. Nombre moyen de méthodes par classe : " + String.format("%.2f", getAverageMethodsPerClass()) + "\n"
-                + " 6. Nombre moyen de lignes de codes par méthode : " + "\n"
-                + " 7. Nombre moyen d'attributs par classe : " + getAverageAttributesPerClass() + "\n"
+                + " 6. Nombre moyen de lignes de codes par méthode : " + String.format("%.2f", avgLinesPerMethod())+ "\n"
+                + " 7. Nombre moyen d'attributs par classe : " + String.format("%.2f",getAverageAttributesPerClass()) + "\n"
                 + " 8. Les 10% des classes qui possèdent le plus grand nombre de méthodes : " + top10Methods() + "\n"
                 + " 9. Les 10% des classes qui possèdent le plus grand nombre d'attributs : " + top10Attributes() + "\n"
                 + "10. Les classes qui font partie en même temps des deux catégories précédentes : " + top10Overall() + "\n"
@@ -42,6 +42,14 @@ public class ApplicationEntity extends NodeEntity {
                 + "12. Les 10% de méthodes qui possèdent le plus grand nombre de lignes de code (par classe) : " + top10LinesCount() + "\n"
                 + "13. Le nombre maximal de paramètres par rapport à toutes les méthodes de l'application : " + getMaxParams() + "\n";
         System.out.println(res);
+    }
+
+    private float avgLinesPerMethod() {
+        float count = 0;
+        for (MethodEntity me : getMethods()){
+            count += me.countLines;
+        }
+        return count / getMethods().size();
     }
 
     private int countPackages(Set<PackageEntity> packages) {
@@ -79,6 +87,7 @@ public class ApplicationEntity extends NodeEntity {
     }
 
     private int countApplicationMethods() {
+
         return getMethods().size();
     }
 
