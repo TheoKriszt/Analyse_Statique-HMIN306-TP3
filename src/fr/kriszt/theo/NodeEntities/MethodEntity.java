@@ -3,6 +3,7 @@ package fr.kriszt.theo.NodeEntities;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class MethodEntity  extends NodeEntity{
 
@@ -50,8 +51,10 @@ public class MethodEntity  extends NodeEntity{
     }
 
     private String getParams() {
-        if (methodDeclaration == null) return "";
-//        System.out.println("Params : " + methodDeclaration.parameters().toString().replace("\\[|]", ""));
+        if (methodDeclaration == null && params.isEmpty()) return "";
+        if (methodDeclaration == null) {
+            return params.toString();
+        }
         return methodDeclaration.parameters().toString().replaceAll("\\[|]", "");
 
     }

@@ -5,7 +5,7 @@ import java.util.*;
 
 public class ApplicationEntity extends NodeEntity {
 
-    private ArrayList<PackageEntity> packages = new ArrayList<>();
+    private Set<PackageEntity> packages = new HashSet<>();
     private List<File> srcFiles = new ArrayList<>();
     private int totalLines = 0;
     private int nonBlankLines = 0;
@@ -31,7 +31,7 @@ public class ApplicationEntity extends NodeEntity {
                 + " 1. Nombre de classes dans l'application : " + countClasses() + "\n"
                 + " 2. Nombre de lignes de code dans l'application : " + totalLines + ", dont " + nonBlankLines + " non vides\n"
                 + " 3. Nombre total de méthodes de l'application : " + countApplicationMethods() + "\n"
-                + " 4. Nombre total de packages dans l'application : " + packages.size() + "\n"
+                + " 4. Nombre total de classes dans l'application : " + countPackages(packages) + "\n"
                 + " 5. Nombre moyen de méthodes par classe : " + String.format("%.2f", getAverageMethodsPerClass()) + "\n"
                 + " 6. Nombre moyen de lignes de codes par méthode : " + "\n"
                 + " 7. Nombre moyen d'attributs par classe : " + getAverageAttributesPerClass() + "\n"
@@ -42,6 +42,19 @@ public class ApplicationEntity extends NodeEntity {
                 + "12. Les 10% de méthodes qui possèdent le plus grand nombre de lignes de code (par classe) : " + top10LinesCount() + "\n"
                 + "13. Le nombre maximal de paramètres par rapport à toutes les méthodes de l'application : " + getMaxParams() + "\n";
         System.out.println(res);
+    }
+
+    private int countPackages(Set<PackageEntity> packages) {
+
+        List<String> seen = new ArrayList<>();
+
+        for (PackageEntity pe : packages){
+            if (!seen.contains(pe.toString())){
+                seen.add(pe.toString());
+            }
+        }
+
+        return seen.size();
     }
 
     private int getMaxParams() {

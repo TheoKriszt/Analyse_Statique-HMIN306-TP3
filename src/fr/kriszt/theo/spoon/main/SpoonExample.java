@@ -1,21 +1,26 @@
 package fr.kriszt.theo.spoon.main;
 
+import fr.kriszt.theo.NodeEntities.ClassEntity;
+import fr.kriszt.theo.NodeEntities.MethodEntity;
+import fr.kriszt.theo.NodeEntities.TypeEntity;
 import spoon.Launcher;
 import spoon.reflect.code.CtBlock;
+import spoon.reflect.code.CtInvocation;
 import spoon.reflect.code.CtStatement;
 import spoon.reflect.declaration.*;
 import spoon.reflect.factory.CodeFactory;
 import spoon.reflect.factory.CoreFactory;
 import spoon.reflect.factory.TypeFactory;
 import spoon.reflect.reference.CtFieldReference;
+import spoon.reflect.visitor.Query;
+import spoon.reflect.visitor.filter.TypeFilter;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class SpoonExample <T>
 {
@@ -24,8 +29,12 @@ public class SpoonExample <T>
 	private CoreFactory coreFactory;
 	private CodeFactory codeFactory;
 	private TypeFactory typeFactory;
-	
+	public Map<String, Set<String>> methodsCalls = new HashMap<>();
+	public Map<String, Set<String>> classes = new HashMap<>();
+
 	private CtClass<T> generatedClass;
+
+	private Launcher launcher = new Launcher();
 	
 	/**
 	 * Constructor
@@ -44,6 +53,78 @@ public class SpoonExample <T>
 		
 		generatedClass = (CtClass<T>) launcher.getFactory().Type().get(className);
 	}
+
+
+	public SpoonExample(String sourcePath)
+	{
+		launcher.getEnvironment().setNoClasspath(true);
+
+		launcher.addInputResource(sourcePath);
+		launcher.buildModel();
+
+		//ctClass = (CtClass<T>) launcher.getFactory().Type().get(className);
+	}
+
+	public void runScan()
+	{
+		for(CtType<?> ctType : launcher.getFactory().Type().getAll()) {
+			scanType(ctType);
+		}
+	}
+
+	private void scanType(CtType<?> ctType)
+	{
+		Collection<CtMethod<?>> methods = ctType.getMethods();
+//		System.out.println("Scan du type " + ctType.getQualifiedName());
+		TypeEntity currentType = new ClassEntity(ctType.getQualifiedName(), null, null);
+		classes.putIfAbsent(ctType.getQualifiedName(), new HashSet<>());
+//		new TypeEntity(ctType.getSimpleName());
+
+		for(CtMethod<?> method : methods) {
+			for(CtInvocation<?> methodInvocation : Query.getElements(method, new TypeFilter<>(CtInvocation.class))) {
+				if(methodInvocation.getTarget().getType() != null) {
+					if(isProjectClass(methodInvocation.getTarget().getType().toString())) {
+						MethodEntity methodEntity = new MethodEntity( method.getSimpleName(), null, currentType );
+//						System.out.println("Params : " + method.getParameters());
+						List<String> strParams = new ArrayList<>();
+						for (CtParameter parameter : method.getParameters()){
+							strParams.add(parameter.getType().getQualifiedName());
+						}
+						methodEntity.addParams(strParams);
+						methodEntity.setReturnType( method.getType().toString() );
+
+//						methodEntity.setReturnType(  );
+
+						currentType.addMethod(methodEntity);
+
+//						MethodEntity calledMethod = new MethodEntity(methodInvocation.getTarget().getType().toString(), null, new ClassEntity())
+//						methodEntity.calledMethods.add(  )
+
+						String methodSignature = method.getType()+ " " + ctType.getQualifiedName() + "." + method.getSignature();
+						String calleeSignature = methodInvocation.getType() + " " + methodInvocation.getTarget().getType() + '.' + methodInvocation.getExecutable().getSignature();
+//						System.out.println("Méthode source : " + methodSignature);
+//						System.out.println("Appelle " + calleeSignature);
+
+						methodsCalls.putIfAbsent(methodSignature, new HashSet<>());
+						methodsCalls.get(methodSignature).add(calleeSignature);
+
+						classes.get(ctType.getQualifiedName()).add(methodSignature);
+
+					}
+				}
+			}
+		}
+	}
+
+	public boolean isProjectClass(String className)
+	{
+		for(CtType<?> ctType : launcher.getFactory().Type().getAll())
+			if(ctType.getQualifiedName().equals(className))
+				return true;
+
+		return false;
+	}
+
 	
 	/**
 	 * Add an new field into this.generatedClass

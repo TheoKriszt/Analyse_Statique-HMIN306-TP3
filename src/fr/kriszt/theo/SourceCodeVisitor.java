@@ -145,8 +145,8 @@ public class SourceCodeVisitor extends ASTVisitor{
         }
 
         if (typeBinding != null && currentMethod != null) {
-            System.out.println("Appel : " + currentType + " ==> " + typeBinding.getQualifiedName());
-            System.out.println("La méthode " + currentMethod + " appelle la methode " + methodBinding);
+//            System.out.println("Appel : " + currentType + " ==> " + typeBinding.getQualifiedName());
+//            System.out.println("La méthode " + currentMethod + " appelle la methode " + methodBinding);
             Relation rel = Relation.addRelation(currentType.toString(), typeBinding.getQualifiedName());
             rel.addMethod(methodBinding.toString(), currentType.toString());
 

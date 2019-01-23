@@ -55,19 +55,19 @@ import java.util.List;
             classes.add(r.getOutputType());
         }
 
-        System.out.println("Classes : " + classes);
+//        System.out.println("Classes : " + classes);
         Set<ClassCluster> baseClusters = new HashSet<>();
         for (String c : classes){
             baseClusters.add(new ClassCluster(Collections.singleton(c)));
         }
 
-        for (ClassCluster cc : baseClusters){
-            System.out.println(cc);
-        }
+//        for (ClassCluster cc : baseClusters){
+//            System.out.println(cc);
+//        }
 
         DendroLevel currentLevel = new DendroLevel(baseClusters);
         DendroLevel baseLevel = currentLevel;
-        System.out.println("Base : " + baseClusters);
+//        System.out.println("Base : " + baseClusters);
 //
         ArrayList<DendroLevel> levels = new ArrayList<>();
 //
@@ -108,7 +108,7 @@ import java.util.List;
 
         ArrayList<DendroLevel> levels = new ArrayList<>();
 //        levels.add(currentLevel);
-        System.out.println(currentLevel);
+//        System.out.println(currentLevel);
 
         Set<Relation> relations = Relation.getAllRelations();
         relations.clear();
@@ -130,7 +130,7 @@ import java.util.List;
 
         while (currentLevel.genNextLevel()){
             levels.add(currentLevel);
-            System.err.println("Ajout du level " + currentLevel);
+//            System.err.println("Ajout du level " + currentLevel);
             currentLevel = currentLevel.getParent();
         }
 
@@ -138,7 +138,7 @@ import java.util.List;
             levels.add(currentLevel);
         }
 //
-        System.out.println("Levels trouvés :: " + levels);
+//        System.out.println("Levels trouvés :: " + levels);
 
         renderLevels(levels);
 

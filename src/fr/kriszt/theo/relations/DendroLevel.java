@@ -24,7 +24,7 @@ public class DendroLevel {
 
     public boolean genNextLevel(){
         Set<Relation> relations = Relation.getAllRelations();
-        System.out.println("Trying to generate parent ("+relations.size() + " relations left)");
+//        System.out.println("Trying to generate parent ("+relations.size() + " relations left)");
         if (relations.isEmpty()) return false;
         Relation strongestRelation = null;
         int minCoupling = 0;
@@ -37,7 +37,7 @@ public class DendroLevel {
         }
 
         if (strongestRelation != null){
-            System.out.println("Strongest : " + strongestRelation);
+//            System.out.println("Strongest : " + strongestRelation);
             String inputType = strongestRelation.getInputType();
             String outputType = strongestRelation.getOutputType();
 
@@ -63,14 +63,14 @@ public class DendroLevel {
             newRelations.remove(strongestRelation);
             Relation.setAllRelations(newRelations);
 
-            System.out.println("Anciennes rels : ");
-            System.out.println(relations);
-            System.out.println("-----------------------------------");
-            System.out.println("Nouvelles rels : ");
-            System.out.println(newRelations);
-
-            System.out.println("this : " + this);
-            System.out.println("Parent : " + parent);
+//            System.out.println("Anciennes rels : ");
+//            System.out.println(relations);
+//            System.out.println("-----------------------------------");
+//            System.out.println("Nouvelles rels : ");
+//            System.out.println(newRelations);
+//
+//            System.out.println("this : " + this);
+//            System.out.println("Parent : " + parent);
 
             return true;
 

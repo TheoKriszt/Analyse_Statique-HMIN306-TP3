@@ -20,7 +20,7 @@ public class Person {
         return allPersons;
     }
 
-    public void adddCar(Car c){
+    public void addCar(Car c){
         try {
             myCars.add(c);
             c.setOwner(this);

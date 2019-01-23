@@ -21,7 +21,7 @@ public class MethodInvocationEntity extends NodeEntity {
         this.callingClass = currentType;
 
         invocations.add(this);
-        System.out.println("===> MIE :: " + this);
+//        System.out.println("===> MIE :: " + this);
     }
 
 
@@ -32,7 +32,7 @@ public class MethodInvocationEntity extends NodeEntity {
 
         for (MethodInvocationEntity mie : invocations){
             if (! mie.bindClass(classes)){
-                System.err.println("Impossible de binder " + mie);
+//                System.err.println("Impossible de binder " + mie);
 //                return false;
             }
         }

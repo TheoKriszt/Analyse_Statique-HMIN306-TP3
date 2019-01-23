@@ -3,18 +3,18 @@ package fr.kriszt.theo.GraphX;
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.util.mxConstants;
 import com.mxgraph.view.mxGraph;
-import fr.kriszt.theo.relations.MethodRelation;
 import fr.kriszt.theo.NodeEntities.MethodEntity;
 import fr.kriszt.theo.NodeEntities.NodeEntity;
 import fr.kriszt.theo.NodeEntities.TypeEntity;
+import fr.kriszt.theo.relations.MethodRelation;
 import fr.kriszt.theo.relations.Relation;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
 import java.util.List;
+import java.util.*;
 
-public class MethodsGrapher extends JFrame {
+public class SpoonMethodsGrapher extends JFrame {
 
 
     private static final int	DEFAULT_WIDTH		= 100;
@@ -35,7 +35,7 @@ public class MethodsGrapher extends JFrame {
     private mxGraph graph;
     private Object	parent;
 
-    public MethodsGrapher(){
+    public SpoonMethodsGrapher(Map<String, Set<String>> classes, Map<String, Set<String>> calls){
 
         super("Methods internal calls");
 
@@ -44,7 +44,7 @@ public class MethodsGrapher extends JFrame {
         parent = graph.getDefaultParent();
 
         graph.getModel().beginUpdate();
-        placeTypes();
+        placeTypes(classes, calls);
 
         endInit(); // TODO
 
@@ -105,84 +105,42 @@ public class MethodsGrapher extends JFrame {
 
 
 
-    private void placeTypes() {
+    private void placeTypes(Map<String, Set<String>> classes, Map<String, Set<String>> calls) {
 
-        HashMap<String, Object> classesNodes = new HashMap<>();
-        HashMap<String, Object> methodsNodes = new HashMap<>();
-        List<TypeEntity> declaredTypes = new ArrayList<>(TypeEntity.getDeclaredTypes());
-        List<String> declaredTypesNames = new ArrayList<>();
-        List<String> displayedTypes = new ArrayList<>();
-        List<String> displayedMethods = new ArrayList<>();
-        for (TypeEntity declaredType : declaredTypes){
-            declaredTypesNames.add(declaredType.toString());
+        Map<String, Object> classesReferences = new HashMap<>(); // Nom de classe vers objet Vertex conteneur de la classe
+        Map<String, Object> methodsReferences = new HashMap<>(); // Nom de la méthode vars objet Vertex avec son nom
+        Map<String, Object> methodToClassReferences = new HashMap<>(); //Nom d'une méthode vers le vertex de sa classe contenante
+
+        for (String c : classes.keySet()){
+            Object classVertex = graph.insertVertex(parent, null, c, 100, 100, c.length() * LETTER_WIDTH, classes.get(c).size() * LINE_HEIGHT);
+            classesReferences.putIfAbsent(c, classVertex);
+//            System.out.println("\nInscription de la classe " + c);
+
+            for (String subMethod : classes.get(c)){
+//                System.out.println("La méthode " + subMethod + " appartient a la classe " + c);
+                methodToClassReferences.put(subMethod, classVertex);
+            }
         }
 
-//        System.out.println("Declared types : " + declaredTypesNames);
+        for ( String callerName : calls.keySet()){
+            for (String calleeName : calls.get(callerName)){
+                Object callerClass = methodToClassReferences.get(callerName);
+                Object calleeClass = methodToClassReferences.get(calleeName);
 
+//                System.out.println("Recherche de la référence de la classe contenant " + callerName);
 
-        // créer les methodes
-        // lier les méthodes
+                Object callerVertex = graph.insertVertex(callerClass, null, callerName, 300, 100, callerName.length() * LETTER_WIDTH, LINE_HEIGHT);
+                methodsReferences.put( callerName, callerVertex);
 
-        // créer les classes classes
-        for (MethodRelation mr : MethodRelation.getAllRelations()){
-            String calledType = mr.getCalledType(), callingType = mr.getCallingType();
-//            System.out.println("Relation trouvée : " + mr);
+                Object calleeVertex = graph.insertVertex(calleeClass, null, calleeName, 300, 100, calleeName.length() * LETTER_WIDTH, LINE_HEIGHT);
+                methodsReferences.put( calleeName, calleeVertex);
 
-            if (declaredTypesNames.contains(calledType) && declaredTypesNames.contains(callingType)){
+                graph.insertEdge(parent, null, "", callerVertex, calleeVertex);
 
-                if (!displayedTypes.contains(calledType)) {
-                    classesNodes.put(calledType, graph.insertVertex(parent, null, calledType, GRAPH_WIDTH / 2, GRAPH_HEIGHT / 2, 100, 200));
-
-                    displayedTypes.add(calledType);
-                }
-
-                if (!displayedTypes.contains(callingType)) {
-                    classesNodes.put(callingType, graph.insertVertex(parent, null, callingType, 200, GRAPH_HEIGHT / 2 + 200, 100, 200));
-                    displayedTypes.add(callingType);
-                }
 
             }
         }
 
-        for (MethodRelation mr : MethodRelation.getAllRelations()){
-
-            String calling = mr.getCallingMethod();
-            String called = mr.getCalledMethod();
-            Object callingClassNode = classesNodes.get(mr.getCallingType());
-            Object calledClassNode = classesNodes.get(mr.getCalledType());
-
-            if (!displayedMethods.contains( calling ) && declaredTypesNames.contains(mr.getCallingType())){
-                displayedMethods.add(calling);
-//                System.out.println("Inserting " + mr);
-                methodsNodes.put(calling, graph.insertVertex(callingClassNode, null, calling, new Random().nextInt(200), new Random().nextInt(200), getNodeWidth(calling), LINE_HEIGHT));
-
-            }
-
-            if (!displayedMethods.contains( called ) && declaredTypesNames.contains(mr.getCalledType())){
-                displayedMethods.add(called);
-//                System.out.println("Inserting " + mr);
-                methodsNodes.put(called, graph.insertVertex(calledClassNode, null, called, (called.length() * LETTER_WIDTH), LINE_HEIGHT, getNodeWidth(called), LINE_HEIGHT));
-            }
-
-        }
-
-        for (MethodRelation mr : MethodRelation.getAllRelations()){
-            graph.insertEdge(parent, null, "",  methodsNodes.get(mr.getCallingMethod()), methodsNodes.get(mr.getCalledMethod()) );
-        }
-
-
-
-//        for (TypeEntity te : TypeEntity.getDeclaredTypes()){
-//            System.out.println("Reading declared method " + te);
-//            typesCount++;
-//
-//            for (MethodEntity me : te.getMethods()){
-//                System.out.println("\t found method " + me);
-//                for (MethodEntity invocation : me.calledMethods){
-//                    System.out.println("\t\t calls method " + invocation);
-//                }
-//            }
-//        }
 
 
 

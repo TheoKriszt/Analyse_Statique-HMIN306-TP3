@@ -114,12 +114,12 @@ public class Main {
 
         application.printResume( 5 );
 
-        System.out.println("Couplage des classes : ");
-        for (Relation r : Relation.getAllRelations()){
-            System.out.println(r);
-        }
+//        System.out.println("Couplage des classes : ");
+//        for (Relation r : Relation.getAllRelations()){
+//            System.out.println(r);
+//        }
 
-        new Grapher(TypeEntity.getDeclaredTypes(), Relation.getAllRelations());
+//        new Grapher(TypeEntity.getDeclaredTypes(), Relation.getAllRelations());
         new MethodsGrapher();
 
 //        boolean testExemplesDendro = true;
@@ -134,7 +134,7 @@ public class Main {
 //            new Dendrogram(true, true);
 //            new Dendrogram(true, false);
 
-            new Dendrogram(false, false);
+//            new Dendrogram(false, false);
 
 
 
