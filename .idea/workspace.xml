@@ -4,18 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" line="79" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cdf5c7c-0603-4808-80dd-edcf6916b365" name="Default Changelist" comment="callGraph done... hopefully">
+    <list default="true" id="4cdf5c7c-0603-4808-80dd-edcf6916b365" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Dendrogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Dendrogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/ClassCluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/ClassCluster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/MethodRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/MethodRelation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -368,7 +358,7 @@
     <property name="SearchEverywhereHistoryKey" value="Visit&#9;FILE&#9;file:///auto_home/tkriszt/IdeaProjects/Evolution_restructuration/AnalyseStatique/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548284932635" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548285493124" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/spoon-core-6.2.0-jar-with-dependencies.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -377,11 +367,8 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\res" />
-      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\sourceProject_old\resolution" />
-      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\deprecated" />
-      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\ast" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.kriszt.theo.visitors" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib" />
@@ -394,8 +381,11 @@
       <recent name="fr.kriszt.theo.GraphX" />
       <recent name="fr.kriszt.theo" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="fr.kriszt.theo.visitors" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\res" />
+      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\sourceProject_old\resolution" />
+      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\deprecated" />
+      <recent name="C:\Users\Utilisateur\IdeaProjects\Analyse_Statique-HMIN306-TP3\lib\ast" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -485,7 +475,7 @@
       <workItem from="1545301903856" duration="1563000" />
       <workItem from="1548213967088" duration="1139000" />
       <workItem from="1548263639180" duration="5902000" />
-      <workItem from="1548280023726" duration="3484000" />
+      <workItem from="1548280023726" duration="4662000" />
     </task>
     <task id="LOCAL-00001" summary="wéééééééé... (pls kill me)">
       <created>1542154025877</created>
@@ -543,17 +533,31 @@
       <option name="project" value="LOCAL" />
       <updated>1548215135736</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="callGraph done... hopefully">
+      <created>1548284920811</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1548284920811</updated>
+    </task>
+    <task id="LOCAL-00010" summary="callGraph done... hopefully">
+      <created>1548285106911</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1548285106911</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116802000" />
+    <option name="totallyTimeSpent" value="117980000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14232409" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29666665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -562,7 +566,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32819384" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74333334" visible="true" weight="0.37987012" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.74333334" visible="true" weight="0.38656387" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3982684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
