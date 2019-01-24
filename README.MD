@@ -8,9 +8,8 @@ où ``min-X`` est utilisé dans la 11ème métrique calculée : *Les classes qui
 
 
 #### Ressources
-Comme l'affichage des graphes, via [JGraphX](https://github.com/jgraph/jgraphx), reste "brouillon" 
+L'affichage des graphes, via [JGraphX](https://github.com/jgraph/jgraphx), reste "brouillon" 
 car il faut généralement replacer les éléments à la main pour obtenir un graphe compréhensible.
-
 Pour aider un peu, j'ai laissé j'ai laissé d'une part un projet "exemple" [ici](lib/SimpleSample) pour tester le projet sur un programme simple.
 D'autre part, j'ai laissé [là](res) les résultats réarrangés des rendus graphiques avec : 
 + Sur l'analyse de ce projet même
