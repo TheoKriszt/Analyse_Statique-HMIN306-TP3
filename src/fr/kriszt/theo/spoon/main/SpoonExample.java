@@ -77,15 +77,19 @@ public class SpoonExample <T>
 						System.out.println("\t\t\t==>" + signature + " ==> " + targetSignature);
 
 						methodsInvocations.get(method).add(targetSignature);
-						classesMethods.get(elem.getType().getTypeDeclaration()).add(method);
+
 
 						if (!signature.equals(targetSignature)){
 							methodsCalls.putIfAbsent(signature, new HashSet<>());
 							methodsCalls.get(signature).add(targetSignature);
 						}
+
 					}
 				}
+
+
 			}
+
 		}
 	}
 
@@ -101,12 +105,7 @@ public class SpoonExample <T>
 			classes.get(ctType.getQualifiedName()).add(ctType.getQualifiedName() + "." + method.getSignature());
 			methodsInvocations.putIfAbsent(method, new ArrayList<>());
 			classesMethods.get(ctType).add(method);
-
 		}
-
-
-
-
 
 	}
 }
