@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" line="79" />
+    <bookmark url="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" line="77" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cdf5c7c-0603-4808-80dd-edcf6916b365" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject/ExampleMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/And.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/AppFonction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Bottom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Clause.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/DPLL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Equivalent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Exists.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Forall.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Generator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Implique.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Not.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Or.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Predicat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Prop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Terme.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Top.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Var.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/TpNoteStatique.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Grapher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Grapher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/SpoonMethodsGrapher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/SpoonMethodsGrapher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ParamEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/ClassCluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/ClassCluster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/MethodRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/MethodRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/model/Person.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+            <state relative-caret-position="68">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -51,31 +46,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonTutorial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="122" column="127" lean-forward="true" selection-start-line="122" selection-start-column="85" selection-end-line="122" selection-end-column="127" />
+            <state relative-caret-position="338">
+              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.MD">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="254">
-                <caret line="78" column="72" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/CallGraphBySpoon.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="253">
+              <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#visit#2;class#SourceCodeVisitor#0" />
+                <element signature="method#countLines#0;class#SourceCodeVisitor#0" />
               </folding>
             </state>
           </provider>
@@ -84,27 +69,93 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            <state relative-caret-position="119">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/callGraph simpleSample.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/callGraph introspection.PNG">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/ClassCluster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="400">
+              <caret line="128" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="128" />
+              <folding>
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#318#319#0" expanded="true" />
+                <element signature="e#2444#2445#0" expanded="true" />
+                <element signature="e#2494#2495#0" expanded="true" />
+                <element signature="e#2808#2809#0" expanded="true" />
+                <element signature="e#2838#2839#0" expanded="true" />
+                <element signature="method#getContainingCluster#0;class#ClassCluster#0" />
+                <element signature="method#getFirstClass#0;class#ClassCluster#0" />
+                <element signature="method#toString#0;class#ClassCluster#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1190">
+              <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/MethodRelation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+              <folding>
+                <element signature="e#1847#1848#0" expanded="true" />
+                <element signature="e#1883#1884#0" expanded="true" />
+                <element signature="e#1922#1923#0" expanded="true" />
+                <element signature="e#1957#1958#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Relation#0;class#Relation#0" />
+                <element signature="method#addMethod#0;class#Relation#0" />
+                <element signature="method#filterOutsideRelations#0;class#Relation#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/CallGraphBySpoon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -122,8 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>AddMetho</find>
-      <find>Add metho</find>
       <find>Visiting ty</find>
       <find>getOwner(</find>
       <find>err</find>
@@ -152,6 +201,8 @@
       <find>comm</find>
       <find>getAllPersons</find>
       <find>repl</find>
+      <find>auto-gene</find>
+      <find>getCallingMethod</find>
     </findStrings>
     <replaceStrings>
       <replace>packagePath</replace>
@@ -185,35 +236,17 @@
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/ParserUtils.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/Parser.java" />
         <option value="$PROJECT_DIR$/lib/sourceProject/Person.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/PackageEntity.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ParamEntity.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/Relation.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Grapher.java" />
         <option value="$PROJECT_DIR$/lib/SimpleSample/company/Person.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/visitors/ParserHelper.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/MethodRelation.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/RelationCluster.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/relations/RelationCluster.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" />
         <option value="$PROJECT_DIR$/lib/SimpleSample/company/src/AlteredPerson.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/SpoonMethodsGrapher.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/relations/MethodRelation.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Dendrogram.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/relations/ClassCluster.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" />
         <option value="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Car.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonExample.java" />
-        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/CallGraphBySpoon.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonExemple.java" />
         <option value="$PROJECT_DIR$/lib/SimpleSample/company/src/Person_refactored.java" />
@@ -222,6 +255,24 @@
         <option value="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonTutorial.java" />
         <option value="$PROJECT_DIR$/README.MD" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Grapher.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/SpoonMethodsGrapher.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/PackageEntity.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Dendrogram.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/relations/ClassCluster.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/relations/MethodRelation.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/Main.java" />
+        <option value="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java" />
       </list>
     </option>
   </component>
@@ -257,6 +308,11 @@
             <path>
               <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -277,14 +333,20 @@
               <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="theo" type="462c0819:PsiDirectoryNode" />
-              <item name="spoon" type="462c0819:PsiDirectoryNode" />
+              <item name="NodeEntities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="theo" type="462c0819:PsiDirectoryNode" />
-              <item name="spoon" type="462c0819:PsiDirectoryNode" />
+              <item name="relations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="theo" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -299,7 +361,7 @@
     <property name="SearchEverywhereHistoryKey" value="Visit&#9;FILE&#9;file:///auto_home/tkriszt/IdeaProjects/Evolution_restructuration/AnalyseStatique/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548335994847" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548338265471" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/SimpleSample" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -342,7 +404,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Self">
     <configuration name="CallGraphBySpoon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.kriszt.theo.spoon.main.CallGraphBySpoon" />
       <module name="AnalyseStatique" />
@@ -377,7 +439,7 @@
     <configuration name="Self" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="fr.kriszt.theo.Main" />
       <module name="AnalyseStatique" />
-      <option name="PROGRAM_PARAMETERS" value="./src" />
+      <option name="PROGRAM_PARAMETERS" value="./src 10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -398,10 +460,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CallGraphBySpoon" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Lancer l'exemple" />
         <item itemvalue="Application.Lancer l'exemple" />
-        <item itemvalue="Application.CallGraphBySpoon" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -437,7 +499,7 @@
       <workItem from="1548280023726" duration="16192000" />
       <workItem from="1548299796665" duration="4505000" />
       <workItem from="1548305092675" duration="9608000" />
-      <workItem from="1548332100992" duration="4265000" />
+      <workItem from="1548332100992" duration="5905000" />
     </task>
     <task id="LOCAL-00001" summary="wéééééééé... (pls kill me)">
       <created>1542154025877</created>
@@ -537,11 +599,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548314495324</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add Readme">
+      <created>1548336629419</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1548336629420</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147888000" />
+    <option name="totallyTimeSpent" value="149528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -594,38 +663,8 @@
     <MESSAGE value="callGraph done... hopefully" />
     <MESSAGE value="done" />
     <MESSAGE value="done tuto" />
-    <option name="LAST_COMMIT_MESSAGE" value="done tuto" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="relation.getOutputType().equals(relation.getInputType())" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java</url>
-          <line>126</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java</url>
-          <line>75</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Add Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Readme" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -657,20 +696,8 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/ParserHelper.java" />
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/Car.java" />
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/Person.java" />
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Grapher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/spoon-core-6.2.0-jar-with-dependencies.jar!/spoon/reflect/declaration/CtField.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -700,23 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding>
-            <element signature="method#signature#0;class#MethodInvocationEntity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/project-template.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -731,139 +741,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/AlteredPerson.java" />
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/SpoonMethodsGrapher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="115" column="58" selection-start-line="115" selection-start-column="58" selection-end-line="115" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/PackageEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Set.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="224" column="12" selection-start-line="224" selection-start-column="12" selection-end-line="224" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-          <folding>
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/MethodRelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="51" column="67" lean-forward="true" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <element signature="method#placeTypes#0;class#MethodsGrapher#0" />
-            <element signature="method#endInit#0;class#MethodsGrapher#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Dendrogram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getVertexWidth#0;class#Dendrogram#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Relation#0;class#Relation#0" />
-            <element signature="method#addMethod#0;class#Relation#0" />
-            <element signature="method#filterOutsideRelations#0;class#Relation#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/ClassCluster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="92" column="9" lean-forward="true" selection-start-line="91" selection-end-line="92" selection-end-column="9" />
-          <folding>
-            <element signature="method#getContainingCluster#0;class#ClassCluster#0" />
-            <element signature="method#getFirstClass#0;class#ClassCluster#0" />
-            <element signature="method#toString#0;class#ClassCluster#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#visit#2;class#SourceCodeVisitor#0" />
-            <element signature="method#countLines#0;class#SourceCodeVisitor#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,13 +763,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person_refactored.java" />
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -939,20 +813,6 @@
     <entry file="file://$PROJECT_DIR$/res/callGraph simpleSample.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -960,30 +820,238 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/CallGraphBySpoon.java">
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/SpoonMethodsGrapher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        <state relative-caret-position="389">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#endInit#0;class#SpoonMethodsGrapher#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ClassEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/InterfaceEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodInvocationEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/NodeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ParamEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/PackageEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/MethodEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/ApplicationEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="104" column="40" selection-start-line="104" selection-start-column="40" selection-end-line="104" selection-end-column="40" />
+          <folding>
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/NodeEntities/TypeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Grapher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="123" column="61" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonTutorial.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/Dendrogram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="122" column="127" lean-forward="true" selection-start-line="122" selection-start-column="85" selection-end-line="122" selection-end-column="127" />
+        <state relative-caret-position="193">
+          <caret line="161" column="54" selection-start-line="161" selection-start-column="54" selection-end-line="161" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getVertexWidth#0;class#Dendrogram#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="254">
-            <caret line="78" column="72" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/ClassCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="128" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="128" />
+          <folding>
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#2444#2445#0" expanded="true" />
+            <element signature="e#2494#2495#0" expanded="true" />
+            <element signature="e#2808#2809#0" expanded="true" />
+            <element signature="e#2838#2839#0" expanded="true" />
+            <element signature="method#getContainingCluster#0;class#ClassCluster#0" />
+            <element signature="method#getFirstClass#0;class#ClassCluster#0" />
+            <element signature="method#toString#0;class#ClassCluster#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/DendroLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/GraphX/MethodsGrapher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/MethodRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
+            <element signature="e#1922#1923#0" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/relations/Relation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Relation#0;class#Relation#0" />
+            <element signature="method#addMethod#0;class#Relation#0" />
+            <element signature="method#filterOutsideRelations#0;class#Relation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/CallGraphBySpoon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonTutorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#visit#2;class#SourceCodeVisitor#0" />
+            <element signature="method#countLines#0;class#SourceCodeVisitor#0" />
+          </folding>
         </state>
       </provider>
     </entry>

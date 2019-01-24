@@ -12,9 +12,7 @@ public class MethodEntity  extends NodeEntity{
     private TypeEntity typeEntity;
     int countLines = 0;
 
-    public HashSet<MethodEntity> calledMethods = new HashSet<>();
     private String returnType = "void";
-    private HashMap<MethodInvocationEntity, Integer> invocations = new HashMap<>();
 
 
     private MethodEntity(String toString, TypeEntity currentType) {
@@ -57,15 +55,5 @@ public class MethodEntity  extends NodeEntity{
         }
         return methodDeclaration.parameters().toString().replaceAll("\\[|]", "");
 
-    }
-
-    public void addInvocation(MethodInvocationEntity methodInvocationEntity) {
-        if ( ! invocations.containsKey(methodInvocationEntity) ){
-            invocations.put(methodInvocationEntity, 0);
-        }else {
-            invocations.put(methodInvocationEntity,
-                    invocations.get(methodInvocationEntity) + 1
-                    );
-        }
     }
 }

@@ -104,9 +104,6 @@ public class Relation {
         return count;
     }
 
-//    public void setCount(int c) {
-//        count = c;
-//    }
 
     public Set<String> getIncomingMethods() {
         return inMethodsNames;
@@ -130,11 +127,9 @@ public class Relation {
 
     @Override
     public boolean equals(Object o) {
-//        System.err.println("is " + this + " equal to " + o + " ? ");
         boolean res = o instanceof Relation &&
                 inputType.equals(((Relation) o).inputType) &&
                 outputType.equals(((Relation) o).outputType);
-//        System.err.println(res ? "Yes" : "No");
         return res;
     }
 }

@@ -22,7 +22,6 @@ public abstract class TypeEntity extends NodeEntity {
     }
 
     public void addMethod(MethodEntity m){
-//        System.err.println("Add method " + m);
         methods.add(m);
     }
 

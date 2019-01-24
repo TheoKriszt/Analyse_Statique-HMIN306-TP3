@@ -66,9 +66,8 @@ public class SpoonCallRecognizer<T>
 				for (CtConstructorCall elem : method.getElements(new TypeFilter<>(CtConstructorCall.class))) {
 					System.out.println("Constructor call : " + elem);
 
-					String targetSignature = elem.getExecutable().toString();//.getTarget().getType().getQualifiedName();// + "." + elem.getExecutable().getSignature();
-					System.out.println("\t\tInvocation : " + targetSignature); // enr echercher ladeclaration
-//					System.out.println("PP : " + elem.getType().getTypeDeclaration().getSimpleName());
+					String targetSignature = elem.getExecutable().toString();
+					System.out.println("\t\tInvocation : " + targetSignature); // en rechercher la declaration
 					if (classesMethods.keySet().contains(elem.getType().getTypeDeclaration()) && !targetSignature.equals(signature)){
 						System.out.println("\t\t\tEXISTE : " );
 						System.out.println("\t\t\t==>" + signature + " ==> " + targetSignature);

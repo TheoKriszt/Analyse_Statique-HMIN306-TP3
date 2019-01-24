@@ -49,7 +49,6 @@ public class MethodRelation {
         }else {
             targetRelation = new MethodRelation(type1, t1, type2, t2);
             allRelations.add(targetRelation);
-//            System.err.println("Add relation " + targetRelation);
             return targetRelation;
         }
 

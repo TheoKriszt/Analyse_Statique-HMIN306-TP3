@@ -10,12 +10,6 @@ public class ClassEntity extends TypeEntity {
 
     private PackageEntity packageDeclaration;
 
-//    @Override
-//    public ArrayList<MethodEntity> getMethods() {
-//        return methods;
-//    }
-
-    private ArrayList<MethodEntity> methods = new ArrayList<>();
 
     public ClassEntity(String n, PackageEntity currentPackage, TypeDeclaration node) {
         super(n);
@@ -23,19 +17,8 @@ public class ClassEntity extends TypeEntity {
         typeDeclaration = node;
     }
 
-    public boolean matchDeclaration(TypeDeclaration declaration){
-        return declaration.equals(typeDeclaration);
-    }
-
-//    public void addMethod(MethodEntity me){
-//        methods.add(me);
-//    }
-
     public boolean equals(Object o){
         return o instanceof ClassEntity && ((ClassEntity)o).getName().equals(getName());
     }
 
-    public PackageEntity getPackageDeclaration() {
-        return packageDeclaration;
-    }
 }

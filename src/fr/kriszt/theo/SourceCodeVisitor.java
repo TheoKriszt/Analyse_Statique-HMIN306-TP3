@@ -51,13 +51,11 @@ public class SourceCodeVisitor extends ASTVisitor{
         }
         else {
             ClassEntity classEntity = new ClassEntity(typeName, currentPackage, node);
-//            System.err.println("Add class " + classEntity);
             currentPackage.addClass( classEntity );
             currentType = classEntity;
 
         }
 
-//        currentType.setSuperType( node.getSuperclassType() );
         for (FieldDeclaration f : node.getFields()) {
             currentType.addAttribute( f.modifiers() + " " + f.getType() + " " +  ((VariableDeclarationFragment)f.fragments().get(0)).getName());
         }
@@ -138,21 +136,17 @@ public class SourceCodeVisitor extends ASTVisitor{
 
         ITypeBinding typeBinding = expression.resolveTypeBinding();
         IMethodBinding methodBinding = methodInvocation.resolveMethodBinding();
-//        System.out.println("Binding : " + methodBinding);
 
         if (methodBinding == null){
-//            System.err.println("methodBinding for " + methodInvocation + " is null");
             return true;
         }
 
         if (typeBinding != null && currentMethod != null) {
-//            System.out.println("Appel : " + currentType + " ==> " + typeBinding.getQualifiedName());
-//            System.out.println("La méthode " + currentMethod + " appelle la methode " + methodBinding);
             if ( !currentType.toString().equals(typeBinding.getQualifiedName()) ){
                 Relation rel = Relation.addRelation(currentType.toString(), typeBinding.getQualifiedName());
                 rel.addMethod(methodBinding.toString(), currentType.toString());
 
-                MethodRelation methodRelation = MethodRelation.addMethodRelation(currentMethod.toString(), currentType.toString(), methodBinding.toString(), typeBinding.getQualifiedName());
+                MethodRelation.addMethodRelation(currentMethod.toString(), currentType.toString(), methodBinding.toString(), typeBinding.getQualifiedName());
             }
 
 

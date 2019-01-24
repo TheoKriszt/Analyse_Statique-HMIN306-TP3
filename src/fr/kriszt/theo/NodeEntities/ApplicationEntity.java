@@ -86,11 +86,6 @@ public class ApplicationEntity extends NodeEntity {
         return classes;
     }
 
-    private int countApplicationMethods() {
-
-        return getMethods().size();
-    }
-
     private int countClasses(){
         return getClasses().size();
     }

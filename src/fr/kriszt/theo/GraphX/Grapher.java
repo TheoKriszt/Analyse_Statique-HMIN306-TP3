@@ -15,9 +15,7 @@ import java.util.*;
 public class Grapher extends JFrame {
 
 
-    private static final int	DEFAULT_WIDTH		= 100;
-//    private static final int DEFAULT_WINDOW_WIDTH = 900;
-//    private static final int DEFAULT_WINDOW_HEIGHT = 750;
+    private static final int DEFAULT_WIDTH	= 100;
     private static final int NODE_PADDING = 20;
     private static final int LINE_HEIGHT = 20;
     private static final int LETTER_WIDTH = 6;
@@ -28,9 +26,7 @@ public class Grapher extends JFrame {
     private Map<String, Object> typesNodes = new HashMap<>();
 
 
-    String roundEdgesStyle = mxConstants.STYLE_EDGE + "=" + mxConstants.EDGESTYLE_ENTITY_RELATION + ";"
-            +  mxConstants.STYLE_ROUNDED+"=1";
-    String styleCallNode = mxConstants.STYLE_FILLCOLOR + "=#00ffff";
+    private String styleCallNode = mxConstants.STYLE_FILLCOLOR + "=#00ffff";
 
 
     private mxGraph graph;
@@ -48,50 +44,12 @@ public class Grapher extends JFrame {
         placeTypes(declaredTypes);
 
         placeRelations(relations);
-//        for (TypeEntity te : declaredTypes){
-//
-//            Object node = graph.insertVertex(parent, null, te.toString(), new Random().nextInt(DEFAULT_WINDOW_WIDTH), new Random().nextInt(DEFAULT_WINDOW_HEIGHT), minWidth(te), DEFAULT_HEIGHT);
-//
-//            typesNodes.put(te.toString(), node);
-//        }
-
-//        for (Relation r : relations){
-//            Object source = typesNodes.get(r.getCallingMethod());
-//            Object dest = typesNodes.get(r.getCalledMethod());
-//
-//
-//            int width = 0;
-//            int height = 0;
-//            String label = "";//"[" + r.getCount() + " call" + (r.getCount()>1?"s":"") + "]\n";
-//
-//            for (String methodCall : r.getIncomingMethods()){
-//                label += methodCall + "\n";
-//                width = Math.max(width, methodCall.length());
-//                height += 20;
-//            }
-//            Object call = graph.insertVertex(parent, null, label, new Random().nextInt(DEFAULT_WINDOW_WIDTH), new Random().nextInt(DEFAULT_WINDOW_HEIGHT), width*7, height, styleCallNode);
-//            graph.insertEdge(parent, null, "", source, call);
-//            graph.insertEdge(parent, null, "", call, dest);
-//
-//            label = "";
-//            width = 0;
-//            height = 0;
-//            for (String methodCall : r.getOutcomingMethods()){
-//                label += methodCall + "\n";
-//            }
-//
-////            graph.insertEdge(parent, null, label, dest, source);
-//            call = graph.insertVertex(parent, null, label, new Random().nextInt(DEFAULT_WINDOW_WIDTH), new Random().nextInt(DEFAULT_WINDOW_HEIGHT), width*7, height, styleCallNode);
-//            graph.insertEdge(parent, null, "", dest, call);
-//            graph.insertEdge(parent, null, "", call, source);
-//
-//
-//        }
 
         endInit();
 
     }
 
+    @SuppressWarnings("Duplicates")
     private void placeRelations(Set<Relation> relations) {
 
 
@@ -184,6 +142,7 @@ public class Grapher extends JFrame {
 
     }
 
+    @SuppressWarnings("Duplicates")
     private int getNodeWidth(TypeEntity te) {
         int width = te.toString().length();
 
@@ -194,6 +153,7 @@ public class Grapher extends JFrame {
         return width * LETTER_WIDTH;
     }
 
+    @SuppressWarnings("Duplicates")
     private double getNodeWidth(Set<String> methods) {
         int width = 0;
 
@@ -203,6 +163,7 @@ public class Grapher extends JFrame {
         return width * LETTER_WIDTH;
     }
 
+    @SuppressWarnings("Duplicates")
     private void endInit(){
 
         graph.setAllowDanglingEdges(false);
@@ -232,10 +193,6 @@ public class Grapher extends JFrame {
         setVisible(true);
 
 
-    }
-
-    private int minWidth(NodeEntity nodeEntity){
-        return Math.max(DEFAULT_WIDTH, nodeEntity.toString().length() * LETTER_WIDTH);
     }
 
 

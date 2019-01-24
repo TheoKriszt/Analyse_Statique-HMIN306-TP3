@@ -16,7 +16,6 @@ import java.util.List;
 public class Main {
 
     public static final String DEFAULT_SOURCE_PATH = "lib/SimpleSample/company/src";
-//    private static final String DEFAULT_SOURCE_PATH = "../SimpleSample/src";
     private static final String PARSEABLE_EXTENSION = "java";
     private static ASTParser parser;
 
@@ -96,6 +95,25 @@ public class Main {
         if (args.length > 0){
             path = args[0];
         }
+        int MIN_X = 3;
+        if (args.length > 1){
+            try {
+                MIN_X = Integer.parseInt(args[1]);
+            } catch (NumberFormatException e){
+                System.err.println("Impossible de lire l'argument 'min-X'");
+            }
+        }
+
+        System.out.println("========================================");
+        if (args.length == 0) {
+            System.out.println("Aucun argument détecté : utilisation des paramètres par défaut");
+            System.out.println("Usage : java -jar monJar.jar <chemin_vers_les_sources> <min-X>");
+        }
+            System.out.println("Chemin vers le projet : " + path);
+            System.out.println("Min-X : " + MIN_X);
+            System.out.println("========================================");
+        System.out.println("\n\n\n");
+
 
         ApplicationEntity application = new ApplicationEntity("Application");
         readDirectory(path, application);
@@ -114,23 +132,13 @@ public class Main {
 
         System.out.println("\n==============================================================\n");
 
-        application.printResume( 5 );
+        application.printResume( MIN_X );
 
-//        System.out.println("Couplage des classes : ");
-//        for (Relation r : Relation.getAllRelations()){
-//            System.out.println(r);
-//        }
 
         new Grapher(TypeEntity.getDeclaredTypes(), Relation.getAllRelations());
         new MethodsGrapher();
 
-//
-//        if (testExemplesDendro){
-//            new Dendrogram(true, true); // test arbre complet
-//            new Dendrogram(true, false); //test arbres partiels
-//        } else {
-            new Dendrogram(false, false); // réel
-//        }
+        new Dendrogram(false, false); // réel
     }
 
 

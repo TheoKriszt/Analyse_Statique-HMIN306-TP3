@@ -6,21 +6,18 @@ import com.mxgraph.view.mxGraph;
 import fr.kriszt.theo.NodeEntities.MethodEntity;
 import fr.kriszt.theo.NodeEntities.NodeEntity;
 import fr.kriszt.theo.NodeEntities.TypeEntity;
-import fr.kriszt.theo.relations.MethodRelation;
 import fr.kriszt.theo.relations.Relation;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.List;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class SpoonMethodsGrapher extends JFrame {
 
 
     private static final int	DEFAULT_WIDTH		= 100;
-//    private static final int DEFAULT_WINDOW_WIDTH = 900;
-//    private static final int DEFAULT_WINDOW_HEIGHT = 750;
-    private static final int NODE_PADDING = 20;
     private static final int LINE_HEIGHT = 20;
     private static final int LETTER_WIDTH = 6;
     private int GRAPH_WIDTH = 800;
@@ -28,9 +25,6 @@ public class SpoonMethodsGrapher extends JFrame {
 
     private Map<String, Integer> nodesAxis = new HashMap<>();
     private Map<String, Object> typesNodes = new HashMap<>();
-
-    String styleCallNode = mxConstants.STYLE_FILLCOLOR + "=#00ffff";
-
 
     private mxGraph graph;
     private Object	parent;
@@ -50,61 +44,6 @@ public class SpoonMethodsGrapher extends JFrame {
 
     }
 
-    @SuppressWarnings("Duplicates")
-    private void placeRelations(Set<Relation> relations) {
-
-
-        for (Relation r : relations){
-
-            String inType = r.getInputType();
-            String outType = r.getOutputType();
-
-            int x = (nodesAxis.get(inType) + nodesAxis.get(outType)) / 2 + (outType.length() + inType.length()) * LETTER_WIDTH / 2;
-            int inY = GRAPH_HEIGHT / 2;
-            int outY = GRAPH_HEIGHT / 2;
-
-            int labelHeight = 0;
-            String inLabel = "";
-
-            if (r.getIncomingMethods().size() > 0){
-
-                for (String in : r.getIncomingMethods()){
-                    labelHeight += LINE_HEIGHT;
-                    inLabel += in + "\n";
-                }
-
-                inY -= (labelHeight + LINE_HEIGHT * 2);
-
-                Object interNode = graph.insertVertex(parent, null, inLabel, x - getNodeWidth(r.getIncomingMethods())/2, inY, getNodeWidth(r.getIncomingMethods()), labelHeight);
-                graph.insertEdge(parent, null, "", typesNodes.get(inType), interNode);
-                graph.insertEdge(parent, null, "", interNode, typesNodes.get(outType));
-            }
-
-
-            if (r.getOutcomingMethods().size() > 0){
-                labelHeight = 0;
-                String outLabel = "";
-                for (String out : r.getOutcomingMethods()){
-                    labelHeight += LINE_HEIGHT;
-                    outLabel += out + "\n";
-                }
-
-                outY += labelHeight + LINE_HEIGHT;
-
-                Object interNode = graph.insertVertex(parent, null, outLabel, x, outY, getNodeWidth(r.getOutcomingMethods()), labelHeight);
-                graph.insertEdge(parent, null, "", interNode, typesNodes.get(inType));
-                graph.insertEdge(parent, null, "", typesNodes.get(outType), interNode);
-
-
-            }
-
-
-
-        }
-    }
-
-
-
     private void placeTypes(Map<String, Set<String>> classes, Map<String, Set<String>> calls) {
 
         Map<String, Object> classesReferences = new HashMap<>(); // Nom de classe vers objet Vertex conteneur de la classe
@@ -114,10 +53,8 @@ public class SpoonMethodsGrapher extends JFrame {
         for (String c : classes.keySet()){
             Object classVertex = graph.insertVertex(parent, null, c, 100, 100, c.length() * LETTER_WIDTH, classes.get(c).size() * LINE_HEIGHT);
             classesReferences.putIfAbsent(c, classVertex);
-//            System.out.println("\nInscription de la classe " + c);
 
             for (String subMethod : classes.get(c)){
-//                System.out.println("La méthode " + subMethod + " appartient a la classe " + c);
                 methodToClassReferences.put(subMethod, classVertex);
             }
         }
@@ -126,8 +63,6 @@ public class SpoonMethodsGrapher extends JFrame {
             for (String calleeName : calls.get(callerName)){
                 Object callerClass = methodToClassReferences.get(callerName);
                 Object calleeClass = methodToClassReferences.get(calleeName);
-
-//                System.out.println("Recherche de la référence de la classe contenant " + callerName);
 
                 Object callerVertex = graph.insertVertex(callerClass, null, callerName, 300, 100, callerName.length() * LETTER_WIDTH, LINE_HEIGHT);
                 methodsReferences.put( callerName, callerVertex);
@@ -147,31 +82,6 @@ public class SpoonMethodsGrapher extends JFrame {
 
 
 
-    }
-
-    private double getNodeWidth(String called) {
-        return LETTER_WIDTH * called.length();
-    }
-
-    @SuppressWarnings("Duplicates")
-    private int getNodeWidth(TypeEntity te) {
-        int width = te.toString().length();
-
-        for (MethodEntity me : te.getMethods()){
-            width = Math.max(width, me.toString().length());
-        }
-
-        return width * LETTER_WIDTH;
-    }
-
-    @SuppressWarnings("Duplicates")
-    private double getNodeWidth(Set<String> methods) {
-        int width = 0;
-
-        for (String s : methods){
-            width = Math.max(width, s.length());
-        }
-        return width * LETTER_WIDTH;
     }
 
     @SuppressWarnings("Duplicates")
@@ -204,10 +114,6 @@ public class SpoonMethodsGrapher extends JFrame {
         setVisible(true);
 
 
-    }
-
-    private int minWidth(NodeEntity nodeEntity){
-        return Math.max(DEFAULT_WIDTH, nodeEntity.toString().length() * LETTER_WIDTH);
     }
 
 

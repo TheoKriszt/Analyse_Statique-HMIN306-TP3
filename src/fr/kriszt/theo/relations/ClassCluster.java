@@ -16,14 +16,6 @@ public class ClassCluster {
         return parent;
     }
 
-//    public ClassCluster makeParent(){
-//        ClassCluster p = new ClassCluster(this.classes);
-//        p.cohesion = this.cohesion;
-//        this.parent = p;
-//
-//        return p;
-//    }
-
 
 
     public ClassCluster( Set<String> classes ){
@@ -43,7 +35,6 @@ public class ClassCluster {
             if ( cc1.contains(in) && cc2.contains(out) ||
                     cc1.contains(out) && cc2.contains(in)
             ){
-//                System.out.println("Match : " + r);
                 count += r.getCount();
             }
         }
@@ -53,12 +44,8 @@ public class ClassCluster {
         if (cohesion * 2 >= cc1.cohesion + cc2.cohesion){
             cc1.setParent(this);
             cc2.setParent(this);
-//            System.out.println("Parentage : " + cc1 + " ---> " + this);
-//            System.out.println("Parentage : " + cc2 + " ---> " + this);
         }
-//        else {
-//            System.err.println(this + " ferait baisser la cohésion de " + cc1 + " et " + cc2);
-//        }
+
 
 
 
@@ -78,14 +65,10 @@ public class ClassCluster {
 
 
                     if (!cc.contains(in) && !out.equals(first)){
-//                        System.out.print(r + " corrigé en ");
                         r.setOutType(first);
-//                        System.out.println(r+"\n");
 
                     } else if (!cc.contains(out) && !in.equals(first)){
-//                        System.out.print(r + " corrigé en ");
                         r.setInType(first);
-//                        System.out.println(r+"\n");
                     }
                 }
             }
@@ -120,10 +103,7 @@ public class ClassCluster {
         return classes;
     }
 
-    public int getCountWith(ClassCluster otherCluster) {
-        int count = 0;
-        return count;
-    }
+
 
     public boolean contains(String className){
         return classes.contains(className);

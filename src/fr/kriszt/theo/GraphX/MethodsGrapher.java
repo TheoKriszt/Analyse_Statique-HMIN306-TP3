@@ -16,18 +16,10 @@ import java.util.List;
 
 public class MethodsGrapher extends JFrame {
 
-
-//    private static final int	DEFAULT_WIDTH		= 100;
     private static final int LINE_HEIGHT = 20;
     private static final int LETTER_WIDTH = 6;
     private int GRAPH_WIDTH = 800;
     private int GRAPH_HEIGHT = 600;
-
-//    private Map<String, Integer> nodesAxis = new HashMap<>();
-//    private Map<String, Object> typesNodes = new HashMap<>();
-
-//    private String styleCallNode = mxConstants.STYLE_FILLCOLOR + "=#00ffff";
-
 
     private mxGraph graph;
     private Object	parent;
@@ -60,13 +52,10 @@ public class MethodsGrapher extends JFrame {
             declaredTypesNames.add(declaredType.toString());
         }
 
-        // créer les methodes
-        // lier les méthodes
 
         // créer les classes classes
         for (MethodRelation mr : MethodRelation.getAllRelations()){
             String calledType = mr.getCalledType(), callingType = mr.getCallingType();
-//            System.out.println("Relation trouvée : " + mr);
 
             if (declaredTypesNames.contains(calledType) && declaredTypesNames.contains(callingType)){
 
@@ -85,7 +74,6 @@ public class MethodsGrapher extends JFrame {
         }
 
         for (MethodRelation mr : MethodRelation.getAllRelations()){
-//            System.err.println("Method Relation  :" + mr);
 
             String calling = mr.getCallingMethod();
             String called = mr.getCalledMethod();
@@ -94,14 +82,12 @@ public class MethodsGrapher extends JFrame {
 
             if (!displayedMethods.contains( calling ) && declaredTypesNames.contains(mr.getCallingType())){
                 displayedMethods.add(calling);
-//                System.out.println("Inserting " + mr);
                 methodsNodes.put(calling, graph.insertVertex(callingClassNode, null, calling, new Random().nextInt(200), new Random().nextInt(200), getNodeWidth(calling), LINE_HEIGHT));
 
             }
 
             if (!displayedMethods.contains( called ) && declaredTypesNames.contains(mr.getCalledType())){
                 displayedMethods.add(called);
-//                System.out.println("Inserting " + mr);
                 methodsNodes.put(called, graph.insertVertex(calledClassNode, null, called, (called.length() * LETTER_WIDTH), LINE_HEIGHT, getNodeWidth(called), LINE_HEIGHT));
             }
 
@@ -117,15 +103,6 @@ public class MethodsGrapher extends JFrame {
         return LETTER_WIDTH * called.length();
     }
 
-//    @SuppressWarnings("Duplicates")
-//    private double getNodeWidth(Set<String> methods) {
-//        int width = 0;
-//
-//        for (String s : methods){
-//            width = Math.max(width, s.length());
-//        }
-//        return width * LETTER_WIDTH;
-//    }
 
     @SuppressWarnings("Duplicates")
     private void endInit(){
