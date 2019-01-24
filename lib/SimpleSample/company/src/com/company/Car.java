@@ -8,6 +8,9 @@ public class Car {
 
     private Person owner;
 
+    public static HashSet<Car> getAllCars(){
+        return (HashSet<Car>) allCars.clone();
+    }
     Car(Person p){
         this();
         this.owner = p;
@@ -20,9 +23,7 @@ public class Car {
         allCars.add(this);
     }
 
-    public static HashSet<Car> getAllCars(){
-        return (HashSet<Car>) allCars.clone();
-    }
+
 
     void setOwner(Person person) {
         owner.removeCar(this);
