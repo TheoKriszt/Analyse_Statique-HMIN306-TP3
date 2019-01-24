@@ -14,7 +14,7 @@ public class CallGraphBySpoon {
             PROJECT_PATH = args[0];
         }
 
-        SpoonExample<Void> spoonInstance = new SpoonExample<>(PROJECT_PATH);
+        SpoonCallRecognizer<Void> spoonInstance = new SpoonCallRecognizer<>(PROJECT_PATH);
         spoonInstance.runScan();
 
         System.out.println("Types déclarés : " + spoonInstance.classes);

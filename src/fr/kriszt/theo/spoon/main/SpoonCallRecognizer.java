@@ -5,15 +5,12 @@ import spoon.reflect.code.CtConstructorCall;
 import spoon.reflect.code.CtInvocation;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtType;
-import spoon.reflect.factory.CodeFactory;
-import spoon.reflect.factory.CoreFactory;
-import spoon.reflect.factory.TypeFactory;
 import spoon.reflect.visitor.Query;
 import spoon.reflect.visitor.filter.TypeFilter;
 
 import java.util.*;
 
-public class SpoonExample <T>
+public class SpoonCallRecognizer<T>
 {
 	Map<String, Set<String>> methodsCalls = new HashMap<>();
 	public Map<String, Set<String>> classes = new HashMap<>();
@@ -22,7 +19,7 @@ public class SpoonExample <T>
 
 	private Launcher launcher = new Launcher();
 
-	SpoonExample(String sourcePath)
+	SpoonCallRecognizer(String sourcePath)
 	{
 		launcher.getEnvironment().setNoClasspath(true);
 		launcher.addInputResource(sourcePath);

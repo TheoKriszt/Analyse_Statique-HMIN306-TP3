@@ -5,7 +5,8 @@ import java.util.HashSet;
 
 public class Person {
 
-    private static HashSet<Person> allPersons = new HashSet<>();
+    // TODO : accès interdit de l'exterieur : passer en private
+    public static HashSet<Person> allPersons = new HashSet<>();
 
     private final String name;
 
@@ -16,6 +17,11 @@ public class Person {
         allPersons.add(this);
     }
 
+    /**
+     * Retourne la liste de toute sles personnes
+     * @return allPersons la liste des personnes qui apparaissent dans le programme
+     * TODO : empecher les effets de bord depuis une autre classe : ne renvoyer qu'une copie;
+     */
     public static HashSet<Person> getAllPersons() {
         return allPersons;
     }
@@ -23,7 +29,6 @@ public class Person {
     public void addCar(Car c){
         try {
             myCars.add(c);
-            c.setOwner(this);
         }catch (Exception e ){
 //            System.err.println("This try-catch should be useless");
         }
@@ -42,10 +47,6 @@ public class Person {
 
     public String getName() {
         return name;
-    }
-
-    public void addCar(Car car) {
-        myCars.add(car);
     }
 
     public void removeCar(Car car) {
