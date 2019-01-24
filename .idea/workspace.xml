@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cdf5c7c-0603-4808-80dd-edcf6916b365" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonTutorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/CallGraphBySpoon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/CallGraphBySpoon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/ExampleMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/And.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/AppFonction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Bottom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Clause.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/DPLL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Equivalent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Exists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Forall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Implique.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Not.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Or.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Predicat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Prop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Terme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Top.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sourceProject_old/resolution/Var.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/TpNoteStatique.pdf" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,13 +48,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonTutorial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1018">
-              <caret line="107" column="48" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
+            <state relative-caret-position="219">
+              <caret line="122" column="127" lean-forward="true" selection-start-line="122" selection-start-column="85" selection-end-line="122" selection-end-column="127" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="254">
+                <caret line="78" column="72" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/CallGraphBySpoon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/callGraph simpleSample.PNG">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/callGraph introspection.PNG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -45,9 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
               <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-              <folding>
-                <element signature="e#74#105#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/micka/step1/Parser.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/SourceCodeParser.java" />
         <option value="$PROJECT_DIR$/lib/sourceProject/count/Count.java" />
         <option value="$PROJECT_DIR$/lib/sourceProject/Not.java" />
@@ -165,6 +221,7 @@
         <option value="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Person.java" />
         <option value="$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonTutorial.java" />
+        <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
   </component>
@@ -190,8 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,49 +257,49 @@
             <path>
               <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleSample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleSample" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleSample" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleSample" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="theo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="theo" type="462c0819:PsiDirectoryNode" />
+              <item name="GraphX" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="theo" type="462c0819:PsiDirectoryNode" />
+              <item name="spoon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Analyse_Statique-HMIN306-TP3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Analyse_Statique-HMIN306-TP3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="theo" type="462c0819:PsiDirectoryNode" />
+              <item name="spoon" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Visit&#9;FILE&#9;file:///auto_home/tkriszt/IdeaProjects/Evolution_restructuration/AnalyseStatique/src/fr/kriszt/theo/visitors/SourceCodeVisitor.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548314334100" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548335994847" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/SimpleSample" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -287,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Spoon tuto">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CallGraphBySpoon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.kriszt.theo.spoon.main.CallGraphBySpoon" />
       <module name="AnalyseStatique" />
@@ -343,10 +398,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Lancer l'exemple" />
         <item itemvalue="Application.Lancer l'exemple" />
         <item itemvalue="Application.CallGraphBySpoon" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -381,7 +436,8 @@
       <workItem from="1548263639180" duration="5902000" />
       <workItem from="1548280023726" duration="16192000" />
       <workItem from="1548299796665" duration="4505000" />
-      <workItem from="1548305092675" duration="9203000" />
+      <workItem from="1548305092675" duration="9608000" />
+      <workItem from="1548332100992" duration="4265000" />
     </task>
     <task id="LOCAL-00001" summary="wéééééééé... (pls kill me)">
       <created>1542154025877</created>
@@ -474,17 +530,24 @@
       <option name="project" value="LOCAL" />
       <updated>1548298648461</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="done tuto">
+      <created>1548314495324</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1548314495324</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143218000" />
+    <option name="totallyTimeSpent" value="147888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -493,7 +556,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32792208" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74333334" visible="true" weight="0.37987012" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.74333334" visible="true" weight="0.37987012" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3982684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -530,7 +593,8 @@
     <MESSAGE value="GUI,&#10;Appels internes de méthodes dans une méthode&#10;Todo 2 : Spoon" />
     <MESSAGE value="callGraph done... hopefully" />
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="done tuto" />
+    <option name="LAST_COMMIT_MESSAGE" value="done tuto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -593,32 +657,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/fr.kriszt.theo.NodeEntities">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>fr.kriszt.theo.NodeEntities</OriginalElement>
-          <nodes>
-            <node x="" y="">fr.kriszt.theo.NodeEntities.ParamEntity</node>
-            <node x="" y="">fr.kriszt.theo.NodeEntities.InterfaceEntity</node>
-            <node x="" y="">fr.kriszt.theo.NodeEntities.TypeEntity</node>
-            <node x="" y="">fr.kriszt.theo.NodeEntities.MethodInvocationEntity</node>
-            <node x="" y="">fr.kriszt.theo.NodeEntities.NodeEntity</node>
-            <node x="" y="">fr.kriszt.theo.NodeEntities.MethodEntity</node>
-            <node x="" y="">fr.kriszt.theo.NodeEntities.PackageEntity</node>
-            <node x="" y="">fr.kriszt.theo.NodeEntities.ApplicationEntity</node>
-            <node x="" y="">fr.kriszt.theo.NodeEntities.ClassEntity</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="471.0" y="99.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/visitors/ParserHelper.java" />
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/Car.java" />
@@ -683,12 +721,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/res/dendroTestComplet.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/callGraph simpleSample.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/callGraph introspection.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/ast/org.eclipse.jdt.core-3.15.0.jar!/org/eclipse/jdt/core/dom/MethodDeclaration.class">
@@ -835,13 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/spoon-core-6.2.0-jar-with-dependencies.jar!/spoon/reflect/declaration/CtType.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -885,24 +910,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/Person_refactored.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/Person_refactored.java" />
+    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/Person.java" />
     <entry file="jar://$PROJECT_DIR$/lib/spoon-core-6.2.0-jar-with-dependencies.jar!/spoon/reflect/factory/CodeFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -922,20 +931,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/Main2.java" />
+    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/Main.java" />
+    <entry file="file://$PROJECT_DIR$/res/callGraph introspection.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/callGraph simpleSample.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="e#74#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/Main2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -949,24 +970,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonCallRecognizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SimpleSample/company/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/kriszt/theo/spoon/main/SpoonTutorial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1018">
-          <caret line="107" column="48" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
+        <state relative-caret-position="219">
+          <caret line="122" column="127" lean-forward="true" selection-start-line="122" selection-start-column="85" selection-end-line="122" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="254">
+            <caret line="78" column="72" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
