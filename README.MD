@@ -61,6 +61,8 @@ Inspiré de [OW2con'18 Spoon: open source library to analyze, rewrite, transform
 
 Utilise le  [programme d'exemple](lib/SimpleSample) qu'il faut refactorer.
 
+Les classes refactorées par le programme sont placées dans le dossier parent de ces dernières (lib/SimpleSample/company/src/com/company), pour être facilement comparées.
+
  
 ##### Scénario :
 Lors d'une code review, vous vous rendez-compte qu'une faille dans le code permet à des classes non autorisées de modifier librement des personnes.
